@@ -68,6 +68,11 @@ function NavBar() {
           </div>
         </NavOptions>
       </Nav>
+      {showModal ? (
+        <Modal onClose={() => setShowModal(false)} show={showModal}></Modal>
+      ) : (
+        <></>
+      )}
     </>
   );
 }

@@ -1,39 +1,45 @@
 {
-    "title": "titan",
-    "name": "titan-analytics-page",
-    "version": "6.0.5",
-    "scripts": {
-        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
-        "build:assets": "node scripts/build-assets.js",
-        "build:pug": "node scripts/build-pug.js",
-        "build:scripts": "node scripts/build-scripts.js",
-        "build:scss": "node scripts/build-scss.js",
-        "clean": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
-        "start:debug": "npm run build && node scripts/start-debug.js"
-    },
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
+  "name": "titan-frontpage",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "react-scroll": "^1.8.4",
+    "react-three-fiber": "^6.0.13",
+    "styled-components": "^5.3.3",
+    "three": "^0.136.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
     ],
-    "license": "MIT",
-    "dependencies": {
-        "bootstrap": "5.1.3"
-    },
-    "devDependencies": {
-        "autoprefixer": "10.3.7",
-        "browser-sync": "2.27.5",
-        "chokidar": "3.5.2",
-        "concurrently": "6.3.0",
-        "postcss": "8.3.9",
-        "prettier": "2.4.1",
-        "pug": "3.0.2",
-        "sass": "1.43.2",
-        "shelljs": "0.8.4",
-        "upath": "2.0.1"
-    }
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.15"
+  }
 }

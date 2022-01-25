@@ -4,6 +4,7 @@ import Header from "./Header";
 import AnimationCanvas from "./Animation";
 import styled from "styled-components";
 import Context from "./Context";
+import Solution from "./Solution";
 const TransparencyContainer = styled.div`
   margin: 8%;
   padding: 2%;
@@ -35,6 +36,7 @@ function Home() {
         </TransparencyContainer>
       </Section>
       <Context />
+      <Solution />
     </>
   );
 }

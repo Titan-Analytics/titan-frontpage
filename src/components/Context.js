@@ -17,6 +17,8 @@ const InfoCard = styled.div`
 
 const Section = styled.div`
   margin: 0 auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
   background: black;
 `;
 
@@ -34,11 +36,11 @@ const FlexContainer = styled.div`
   text-align: center;
   justify-content: center;
   align-items: center;
+  margin-top: 24px;
 `;
 const DarkContainer = styled.div`
   flex: 1;
   margin: 2%;
-
   padding: 2%;
   border-radius: 5px;
   background: #202123;
@@ -58,7 +60,7 @@ function Context() {
                 <h1 id="context">Context</h1>
               </div>
               <div className="mt-sm">
-                <h2 className="text-xl font-normal leading-normal mt-0 mb-2 text-white">
+                <h2 className="text-xl font-normal leading-normal  text-white">
                   Blockchain gaming is facilitating a generational shift in
                   value from game producers to game players, and it’s driving
                   explosive adoption of a new generation of games.

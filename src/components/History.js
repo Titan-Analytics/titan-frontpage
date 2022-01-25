@@ -39,7 +39,7 @@ const DarkContainer = styled.div`
   font-size: 1.2em;
 `;
 
-function Context() {
+function History() {
   return (
     <>
       <Suspense fallback={<div>Loading...</div>}>
@@ -80,4 +80,4 @@ function Context() {
   );
 }
 
-export default Context;
+export default History;

@@ -2,37 +2,17 @@ import React from "react";
 import Modal from "./Modal";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
-function NavBar() {
-  const Nav = styled.nav`
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-    padding-top: 1.4rem;
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
-  `;
-  const NavOptions = styled.div`
-    display: flex;
-    flex-direction: row;
-    width: 40%;
-    justify-content: space-between;
-    @media (max-width: 600px) {
-      display: none;
-    }
-  `;
-  const Option = styled.a`
-    margin-top: 1rem;
-    font-weight: bold;
-    transition: border-bottom ease-in 1.2s;
-    &:hover {
-      border-bottom: 2px solid white;
-    }
-  `;
 
+const Container = styled.div`
+  margin-top: 5%;
+`;
+
+function Header() {
   const [showModal, setShowModal] = React.useState(false);
   console.log(showModal);
+
   return (
-    <>
+    <Container>
       <div>
         <h2 className="font-normal leading-normal mb-2 text-white">
           Launching Q2 2022
@@ -61,8 +41,8 @@ function NavBar() {
           <button>Get in Touch</button>
         </div>
       </div>
-    </>
+    </Container>
   );
 }
 
-export default NavBar;
+export default Header;

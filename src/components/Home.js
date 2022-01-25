@@ -5,8 +5,10 @@ import AnimationCanvas from "./Animation";
 import styled from "styled-components";
 import Context from "./Context";
 import Solution from "./Solution";
+import History from "./History";
 const TransparencyContainer = styled.div`
-  margin: 8%;
+  margin-left: 8%;
+  margin-right: 8%;
   padding: 2%;
 `;
 
@@ -37,6 +39,7 @@ function Home() {
       </Section>
       <Context />
       <Solution />
+      <History />
     </>
   );
 }

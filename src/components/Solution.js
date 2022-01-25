@@ -4,28 +4,24 @@ import Header from "./Header";
 import AnimationCanvas from "./Animation";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
-const TransparencyContainer = styled.div`
-  margin: 8%;
-  padding: 2%;
-`;
-
-const InfoCard = styled.div`
-  background: white;
-  margin: 0 auto;
-  height: 100vh;
-`;
 
 const Section = styled.div`
   margin: 0 auto;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 5%;
   background: #202123;
-  height: 100vh;
 `;
-
+// background: repeating-linear-gradient(
+//     to right,
+//     #202123,
+//     #202123 200px,
+//     #313235 200px,
+//     #313235 202px
+//   );
 const LeftContainer = styled.div`
-  box-shadow: 0px -2px 18px 17px rgba(64, 64, 64, 0.1);
-  -webkit-box-shadow: 0px -2px 18px 17px rgba(64, 64, 64, 0.1);
-  -moz-box-shadow: 0px -2px 18px 17px rgba(64, 64, 64, 0.1);
+  box-shadow: 0px -2px 18px 17px rgba(64, 64, 64, 0.2);
+  -webkit-box-shadow: 0px -2px 18px 17px rgba(64, 64, 64, 0.2);
+  -moz-box-shadow: 0px -2px 18px 17px rgba(64, 64, 64, 0.2);
   margin-top: 4.5rem;
   margin-right: 30%;
   padding: 5%;
@@ -47,17 +43,6 @@ const FlexContainer = styled.div`
   text-align: center;
   justify-content: center;
   align-items: center;
-`;
-const DarkContainer = styled.div`
-  flex: 1;
-  margin: 2%;
-
-  padding: 2%;
-  border-radius: 5px;
-  background: #202123;
-  text-align: center;
-  align-items: center;
-  font-size: 1.2em;
 `;
 
 function Solution() {

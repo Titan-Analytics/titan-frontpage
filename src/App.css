@@ -9,10 +9,10 @@ body {
 }
 
 .anim {
+  height: 150vh;
   width: 100vw;
   z-index: -100;
   position: absolute;
-  height: 100vh;
   background-color: black;
   background: linear-gradient(#280456, #000, #000);
 }

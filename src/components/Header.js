@@ -1,7 +1,7 @@
 import React from "react";
 import Modal from "./Modal";
 import styled from "styled-components";
-
+import Fade from "react-reveal/Fade";
 function NavBar() {
   const Nav = styled.nav`
     display: flex;
@@ -33,22 +33,24 @@ function NavBar() {
   console.log(showModal);
   return (
     <>
-      <div className="mt-md">
-        <h2 className="font-normal leading-normal mt-0 mb-2 text-white">
+      <div className="">
+        <h2 className="font-normal leading-normal mb-2 text-white">
           Launching Q2 2022
         </h2>
       </div>
-      <div className="container flex-col mt-5 text-4xl lg:text-6xl md:text-5xl sm:text-4xl font-bold leading-normal mt-0 mb-2 text-white">
-        <h1>Commercial analytics</h1>
-        <h1>Built for the Metaverse</h1>
-      </div>
-      <div className="mt-sm">
-        <h2 className="font-normal leading-normal mt-0 mb-2 text-white">
-          Modern analytics to support play to earn gaming and NFT trading.
-          Quickly spot opportunities in the market and maximize earning
-          potential.{" "}
-        </h2>
-      </div>
+      <Fade>
+        <div className="container flex-col mt-5 text-4xl lg:text-6xl md:text-5xl sm:text-4xl font-bold leading-normal mt-0 mb-2 text-white">
+          <h1>Commercial analytics</h1>
+          <h1>Built for the Metaverse</h1>
+        </div>
+        <div className="mt-sm">
+          <h2 className="font-normal leading-normal mt-0 mb-2 text-white">
+            Modern analytics to support play to earn gaming and NFT trading.
+            Quickly spot opportunities in the market and maximize earning
+            potential.{" "}
+          </h2>
+        </div>
+      </Fade>
       <div className="my-sm">
         <div className="mr-sm transition duration-500 ease-in-out bg-blue bg-opacity-30 px-sm py-xs inline-block text-md leading-none rounded focus:shadow-outline hover:bg-opacity-50 text-white mt-4 lg:mt-0">
           <button onClick={() => setShowModal(true)}>

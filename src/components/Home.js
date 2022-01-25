@@ -4,8 +4,20 @@ import Header from "./Header";
 import AnimationCanvas from "./Animation";
 import styled from "styled-components";
 
-const Container = styled.div`
-  margin: 10%;
+const TransparencyContainer = styled.div`
+  margin: 8%;
+  padding: 2%;
+`;
+
+const InfoCard = styled.div`
+  background: white;
+  margin: 0 auto;
+  height: 100vh;
+`;
+
+const Section = styled.div`
+  margin: 0 auto;
+  height: 100vh;
 `;
 
 function App() {
@@ -13,13 +25,16 @@ function App() {
     <>
       <div className="anim">
         <Suspense fallback={<div>Loading...</div>}>
-          {/* <AnimationCanvas /> */}
-          <NavBar />
-          <Container>
-            <Header />
-          </Container>
+          <AnimationCanvas />
         </Suspense>
       </div>
+      <Section>
+        <NavBar />
+        <TransparencyContainer>
+          <Header />
+        </TransparencyContainer>
+      </Section>
+      <InfoCard>History</InfoCard>
     </>
   );
 }

@@ -33,7 +33,7 @@ function NavBar() {
   console.log(showModal);
   return (
     <>
-      <div className="">
+      <div>
         <h2 className="font-normal leading-normal mb-2 text-white">
           Launching Q2 2022
         </h2>

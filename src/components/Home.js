@@ -3,7 +3,7 @@ import NavBar from "./NavBar";
 import Header from "./Header";
 import AnimationCanvas from "./Animation";
 import styled from "styled-components";
-
+import Context from "./Context";
 const TransparencyContainer = styled.div`
   margin: 8%;
   padding: 2%;
@@ -20,7 +20,7 @@ const Section = styled.div`
   height: 100vh;
 `;
 
-function App() {
+function Home() {
   return (
     <>
       <div className="anim">
@@ -34,9 +34,9 @@ function App() {
           <Header />
         </TransparencyContainer>
       </Section>
-      <InfoCard>History</InfoCard>
+      <Context />
     </>
   );
 }
 
-export default App;
+export default Home;

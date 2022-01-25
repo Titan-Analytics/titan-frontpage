@@ -4,15 +4,18 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   overflow-x: hidden;
 }
 
 .anim {
+  height: 100vh;
+  padding-top: 30vh;
   width: 100vw;
   z-index: -100;
   position: absolute;
-  height: 100vh;
   background-color: black;
   background: linear-gradient(#280456, #000, #000);
+
 }

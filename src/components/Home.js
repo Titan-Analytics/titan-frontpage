@@ -3,25 +3,45 @@ import NavBar from "./NavBar";
 import Header from "./Header";
 import AnimationCanvas from "./Animation";
 import styled from "styled-components";
-
-const Container = styled.div`
-  margin: 10%;
+import Context from "./Context";
+import Solution from "./Solution";
+import History from "./History";
+const TransparencyContainer = styled.div`
+  margin-left: 8%;
+  margin-right: 8%;
+  padding: 2%;
 `;
 
-function App() {
+const InfoCard = styled.div`
+  background: white;
+  margin: 0 auto;
+  height: 100vh;
+`;
+
+const Section = styled.div`
+  margin: 0 auto;
+  height: 100vh;
+`;
+
+function Home() {
   return (
     <>
       <div className="anim">
         <Suspense fallback={<div>Loading...</div>}>
-          {/* <AnimationCanvas /> */}
-          <NavBar />
-          <Container>
-            <Header />
-          </Container>
+          <AnimationCanvas />
         </Suspense>
       </div>
+      <Section>
+        <NavBar />
+        <TransparencyContainer>
+          <Header />
+        </TransparencyContainer>
+      </Section>
+      <Context />
+      <Solution />
+      {/* <History /> */}
     </>
   );
 }
 
-export default App;
+export default Home;

@@ -9,7 +9,7 @@ const Section = styled.div`
   margin: 0 auto;
   padding-top: 8%;
   padding-bottom: 5%;
-  background: linear-gradient(#000, #000, #202123);
+  background: linear-gradient(#000, #000, #000);
 `;
 
 const TextContainer = styled.div`

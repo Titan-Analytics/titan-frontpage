@@ -39,7 +39,7 @@ function Home() {
       </Section>
       <Context />
       <Solution />
-      <History />
+      {/* <History /> */}
     </>
   );
 }

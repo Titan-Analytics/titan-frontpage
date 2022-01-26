@@ -7,42 +7,42 @@ import Fade from "react-reveal/Fade";
 
 const Section = styled.div`
   margin: 0 auto;
-  padding-top: 1rem;
-  padding-bottom: 5%;
-  background: #000;
-`;
-// background: repeating-linear-gradient(
-//     to right,
-//     #202123,
-//     #202123 200px,
-//     #313235 200px,
-//     #313235 202px
-//   );
-const LeftContainer = styled.div`
-  box-shadow: 0px -2px 18px 17px rgba(64, 64, 64, 0.3);
-  -webkit-box-shadow: 0px -2px 18px 17px rgba(64, 64, 64, 0.3);
-  -moz-box-shadow: 0px -2px 18px 17px rgba(64, 64, 64, 0.3);
-  margin-top: 4.5rem;
-  margin-right: 30%;
-  padding: 5%;
-  border-radius: 5px;
-  border-radius: 0px 24px 24px 0px;
-  background: #28045670;
+  padding: 8%;
+  background: linear-gradient(#000, #000, #000);
 `;
 
-const RightContainer = styled(LeftContainer)`
-  margin-left: 30%;
-  margin-right: 0%;
-  text-align: right;
-  border-radius: 24px 0px 0px 24px;
+const TextContainer = styled.div`
+  margin-left: 8%;
+  margin-right: 8%;
+  width: 50%;
 `;
 
 const FlexContainer = styled.div`
   display: flex;
   flex-direction: row;
-  text-align: center;
   justify-content: center;
   align-items: center;
+  margin-top: 24px;
+`;
+const DarkContainer = styled.div`
+  flex: 1;
+  margin-left: 0%;
+  margin-top: 2%;
+  padding: 2%;
+  border-radius: 5px;
+  border: 1px solid #776df5;
+  align-items: center;
+  font-size: 1.2em;
+  &:hover {
+    box-shadow: 1px -2px 38px 16px rgba(255, 255, 255, 0.09);
+  }
+`;
+const LeftContainer = styled.div``;
+
+const RightContainer = styled(LeftContainer)`
+  margin-left: 30%;
+  margin-right: 0%;
+  border-radius: 24px 0px 0px 24px;
 `;
 
 function Solution() {
@@ -50,39 +50,33 @@ function Solution() {
     <>
       <Suspense fallback={<div>Loading...</div>}>
         <Section>
-          <LeftContainer>
-            <Fade bottom>
-              <div className="text-4xl lg:text-4xl md:text-5xl sm:text-4xl font-bold leading-normal text-white">
-                <h1 id="context">Problem</h1>
-              </div>
-              <div className="mt-sm">
-                <h2 className="text-l font-normal leading-normal mt-0 mb-2 text-white">
-                  People have been making money in games for decades, but there
-                  is a massive gap in the availability of modern analytical
-                  platforms to suit the needs of commercially-oriented gamers
-                </h2>
-              </div>
-            </Fade>
-          </LeftContainer>
           <RightContainer>
             <Fade bottom>
               <div className="text-4xl lg:text-4xl md:text-5xl sm:text-4xl font-bold leading-normal text-white">
-                <h1 id="context" className="text-white">
-                  Solution
+                <h1 id="context" className="text-right pr-3">
+                  Problem and Solution
                 </h1>
               </div>
-              <div className="mt-sm">
-                <h2 className="text-l font-normal leading-normal mt-0 mb-2 text-white">
-                  Our analytics and insight platform arms players, guild
-                  operators and metaverse entrepreneurs with the insights needed
-                  to maximize their success, helping answer the ultimate
-                  question:{" "}
-                  <span className="text-lightpurple font-bold">
-                    How do I best allocate my time and capital in order to
-                    maximize returns?
-                  </span>
-                </h2>
-              </div>
+              <DarkContainer>
+                <div className="mt-sm">
+                  <h2 className="text-l font-normal leading-normal mt-0 mb-2 text-white">
+                    People have been making money in games for decades, but
+                    there is a massive gap in the availability of modern
+                    analytical platforms to suit the needs of
+                    commercially-oriented gamers
+                  </h2>
+                  <h2 className="text-l font-normal leading-normal mt-0 mb-2 text-white">
+                    Our analytics and insight platform arms players, guild
+                    operators and metaverse entrepreneurs with the insights
+                    needed to maximize their success, helping answer the
+                    ultimate question:{" "}
+                    <span className="text-lightpurple font-bold">
+                      How do I best allocate my time and capital in order to
+                      maximize returns?
+                    </span>
+                  </h2>
+                </div>
+              </DarkContainer>
             </Fade>
           </RightContainer>
         </Section>

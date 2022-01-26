@@ -29,8 +29,6 @@ function NavBar() {
     }
   `;
 
-  const [showModal, setShowModal] = React.useState(false);
-  console.log(showModal);
   return (
     <>
       <Nav>
@@ -62,17 +60,10 @@ function NavBar() {
           <Option>History</Option>
           <Option>Blog</Option>
           <div className="transition duration-500 ease-in-out bg-blue bg-opacity-30 px-sm py-xs inline-block text-md leading-none rounded focus:shadow-outline hover:bg-opacity-50 text-white ">
-            <button onClick={() => setShowModal(true)}>
-              Join the waitlist
-            </button>
+            <button>Join the waitlist</button>
           </div>
         </NavOptions>
       </Nav>
-      {showModal ? (
-        <Modal onClose={() => setShowModal(false)} show={showModal}></Modal>
-      ) : (
-        <></>
-      )}
     </>
   );
 }

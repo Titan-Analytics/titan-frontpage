@@ -8,22 +8,19 @@ import Fade from "react-reveal/Fade";
 const Section = styled.div`
   margin: 0 auto;
   padding-top: 8%;
-  padding-bottom: 5%;
   background: linear-gradient(#000, #000, #000);
 `;
 
 const TextContainer = styled.div`
-  text-align: center;
-  justify-content: center;
-  align-items: center;
   margin-left: 8%;
   margin-right: 8%;
+  width: 50%;
 `;
 
 const FlexContainer = styled.div`
   display: flex;
   flex-direction: row;
-  text-align: center;
+
   justify-content: center;
   align-items: center;
   margin-top: 24px;
@@ -31,12 +28,15 @@ const FlexContainer = styled.div`
 const DarkContainer = styled.div`
   flex: 1;
   margin: 2%;
+  margin-left: 0%;
   padding: 2%;
   border-radius: 5px;
-  background: #202123;
-  text-align: center;
+  border: 1px solid #776df5;
   align-items: center;
   font-size: 1.2em;
+  &:hover {
+    box-shadow: 1px -2px 38px 16px rgba(255, 255, 255, 0.09);
+  }
 `;
 
 function Context() {
@@ -58,18 +58,20 @@ function Context() {
               </div>
             </Fade>
             <Fade>
-              <FlexContainer className="text-lightpurple">
+              <FlexContainer className="">
                 <DarkContainer>
-                  Traditional games greatly restrict players earning potential,
-                  as game producers retain ownership over in-game assets, and
-                  limit the ability of players to trade assets and in-game
-                  currency for real world currency
-                </DarkContainer>
-                <DarkContainer>
-                  Blockchain games eliminate these restrictions, allowing
-                  players to purchase and hold in-game currency and assets (as
-                  NFTs) in their private wallets, and trade them at will for
-                  real-world currency
+                  <p>
+                    Traditional games greatly restrict players earning
+                    potential, as game producers retain ownership over in-game
+                    assets, and limit the ability of players to trade assets and
+                    in-game currency for real world currency.
+                  </p>
+                  <p>
+                    Blockchain games eliminate these restrictions, allowing
+                    players to purchase and hold in-game currency and assets (as
+                    NFTs) in their private wallets, and trade them at will for
+                    real-world currency
+                  </p>
                 </DarkContainer>
               </FlexContainer>
             </Fade>

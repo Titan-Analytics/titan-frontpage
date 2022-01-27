@@ -6,9 +6,8 @@ import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 import NewsCard from "./NewsCard";
 const Section = styled.div`
-  margin: 0 auto;
-  padding-top: 8%;
   padding-bottom: 5%;
+  padding-left: 8%;
   background: linear-gradient(#000, #000, #000);
 `;
 
@@ -69,9 +68,17 @@ function History() {
               <h1 id="context">Our History</h1>
             </div>
           </Fade>
-          {CONTENT.map((c, key) => {
-            return <NewsCard text={c.text} subtext={c.subtext} />;
-          })}
+          <div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/v6S2S0Pekgg"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </Section>
       </Suspense>
     </>

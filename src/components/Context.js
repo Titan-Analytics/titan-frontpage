@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 
 const Section = styled.div`
   margin: 0 auto;
-  padding-top: 8%;
+
   background: linear-gradient(#000, #000, #000);
 `;
 

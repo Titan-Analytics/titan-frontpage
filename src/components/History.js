@@ -68,10 +68,7 @@ function History() {
           </Fade>
           <TextContainer>
             <LeftContainer>{CONTENT[0].text}</LeftContainer>
-            <div>
-              <Image src="./solana.png" />
-              <Image src="./ignition.png" />
-            </div>
+
             <div>
               <iframe
                 width="560"
@@ -83,6 +80,15 @@ function History() {
                 allowfullscreen
               ></iframe>
             </div>
+            <LeftContainer>
+              {" "}
+              <TextContainer>
+                November 2021: Conducted one of the largest behavioural research
+                studies into play to earn gaming globally. Created visibility
+                into players' preferences and beliefs around gaming, and aligned
+                our strategy and product roadmap accordingly.
+              </TextContainer>
+            </LeftContainer>
           </TextContainer>
         </Section>
       </Suspense>

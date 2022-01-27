@@ -23,6 +23,23 @@ const Section = styled.div`
   height: 100vh;
 `;
 
+const Image = styled.img`
+  height: 7rem;
+  margin: auto;
+`;
+
+const Image2 = styled.img`
+  height: 400px;
+  margin: auto;
+`;
+const FlexContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+`;
 function Home() {
   return (
     <>
@@ -37,9 +54,13 @@ function Home() {
           <Header />
         </TransparencyContainer>
       </Section>
+      <FlexContainer>
+        <Image src="solana.png" />
+        <Image2 src="ignition.png" />
+      </FlexContainer>
       <Context />
       <Solution />
-      {/* <History /> */}
+      <History />
     </>
   );
 }

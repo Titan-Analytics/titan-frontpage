@@ -6,18 +6,20 @@ import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 import NewsCard from "./NewsCard";
 const Section = styled.div`
-  margin: 0 auto;
-  padding-top: 8%;
-  padding-bottom: 5%;
+  padding: 8%;
+  padding-top: 0;
   background: linear-gradient(#000, #000, #000);
 `;
 
 const TextContainer = styled.div`
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin-left: 8%;
-  margin-right: 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2%;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const FlexContainer = styled.div`
@@ -28,10 +30,8 @@ const FlexContainer = styled.div`
   align-items: center;
   margin-top: 24px;
 `;
-const DarkContainer = styled.div`
-  margin: 2%;
+const LeftContainer = styled.div`
   padding: 2%;
-  height: 450px;
   width: 350px;
   border-radius: 5px;
   background: #202123;
@@ -39,16 +39,13 @@ const DarkContainer = styled.div`
   align-items: center;
   font-size: 1.2em;
 `;
-
+const Image = styled.img`
+  height: 10rem;
+`;
 function History() {
   const CONTENT = [
     {
       text: "September 2021: Titan Analytics was launched - becoming one of the winners in Solana’s global IGNITION hackathon.",
-      subtext: `See our explainer video and prototype walkthrough ${(
-        <a href="https://www.youtube.com/watch?v=v6S2S0Pekgg" target="_blank">
-          here
-        </a>
-      )}`,
       key: "1",
     },
     {
@@ -69,9 +66,30 @@ function History() {
               <h1 id="context">Our History</h1>
             </div>
           </Fade>
-          {CONTENT.map((c, key) => {
-            return <NewsCard text={c.text} subtext={c.subtext} />;
-          })}
+          <TextContainer>
+            <LeftContainer>{CONTENT[0].text}</LeftContainer>
+
+            <div>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/v6S2S0Pekgg"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <LeftContainer>
+              {" "}
+              <TextContainer>
+                November 2021: Conducted one of the largest behavioural research
+                studies into play to earn gaming globally. Created visibility
+                into players' preferences and beliefs around gaming, and aligned
+                our strategy and product roadmap accordingly.
+              </TextContainer>
+            </LeftContainer>
+          </TextContainer>
         </Section>
       </Suspense>
     </>

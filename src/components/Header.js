@@ -1,7 +1,7 @@
 import React from "react";
-import Modal from "./Modal";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
+import {Link} from "react-router-dom";
 
 const Container = styled.div`
   margin-top: 5%;
@@ -33,8 +33,8 @@ function Header() {
       </Fade>
       <div className="my-sm">
         <div className="mr-sm transition duration-500 ease-in-out bg-blue bg-opacity-30 px-sm py-xs inline-block text-md leading-none rounded focus:shadow-outline hover:bg-opacity-50 text-white mt-4 lg:mt-0">
-          <button onClick={() => setShowModal(true)}>
-            Sign up for early access!
+          <button className="cursor-pointer" onClick={() => setShowModal(true)}>
+            <Link to="/waitlist">Sign up for early access!</Link>
           </button>
         </div>
         <div className="transition duration-500 ease-in-out border border-opacity-0 px-sm py-xs inline-block text-md leading-none rounded focus:shadow-outline hover:border-opacity-90 text-white mt-4 lg:mt-0">

@@ -34,7 +34,7 @@ function Header() {
       <div className="my-sm">
         <div className="mr-sm transition duration-500 ease-in-out bg-blue bg-opacity-30 px-sm py-xs inline-block text-md leading-none rounded focus:shadow-outline hover:bg-opacity-50 text-white mt-4 lg:mt-0">
           <button onClick={() => setShowModal(true)}>
-            Sign up for early access!
+            Sign up for early access!!
           </button>
         </div>
         <div className="transition duration-500 ease-in-out border border-opacity-0 px-sm py-xs inline-block text-md leading-none rounded focus:shadow-outline hover:border-opacity-90 text-white mt-4 lg:mt-0">

@@ -58,9 +58,9 @@ function NavBar() {
           <Option>About</Option>
           <Option>History</Option>
           <Option>Blog</Option>
-          <div className="transition duration-500 ease-in-out bg-blue bg-opacity-30 px-sm py-xs inline-block text-md leading-none rounded focus:shadow-outline hover:bg-opacity-50 text-white ">
-            <button>Join the waitlist</button>
-          </div>
+          {/*<div className="transition duration-500 ease-in-out bg-blue bg-opacity-30 px-sm py-xs inline-block text-md leading-none rounded focus:shadow-outline hover:bg-opacity-50 text-white ">*/}
+          {/*  <button>Join the waitlist</button>*/}
+          {/*</div>*/}
         </NavOptions>
       </Nav>
     </>

@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import About from "./pages/about";
+import About from "./pages/about/About";
 import History from "./components/History";
-import Waitlist from "./pages/waitlist";
+import Waitlist from "./pages/waitlist/Waitlist";
 
 ReactDOM.render(
   <React.StrictMode>

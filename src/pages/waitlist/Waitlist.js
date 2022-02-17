@@ -14,7 +14,6 @@ function Waitlist() {
   async function onClickSubmit(e) {
     e.preventDefault()
     if (formData.name && formData.email) {
-
     }
 
     try {

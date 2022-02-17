@@ -10,14 +10,7 @@ import Waitlist from "./pages/waitlist/Waitlist";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="about" element={<About />} />
-        <Route path="history" element={<History />} />
-        <Route path="waitlist" element={<Waitlist />} />
-      </Routes>
-    </BrowserRouter>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

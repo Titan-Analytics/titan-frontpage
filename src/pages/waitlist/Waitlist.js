@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {ExclamationCircleIcon} from "@heroicons/react/solid";
+import Banner from "../../components/Banner";
 
 function Waitlist() {
   const initialData = {
@@ -10,6 +10,7 @@ function Waitlist() {
   }
   const [formData, setFormData] = useState(initialData)
   const [error, setError] = useState(false)
+  const [submitted, setSubmitted] = useState(false)
 
   async function onClickSubmit(e) {
     e.preventDefault()
@@ -35,6 +36,7 @@ function Waitlist() {
     } catch (e) {
       console.error(e)
     } finally {
+      setSubmitted(true)
       setFormData(initialData)
     }
   }
@@ -124,15 +126,18 @@ function Waitlist() {
                   />
                 </div>
               </div>
-              <button
-                  type="submit"
-                  className=" mt-4 transition duration-500 ease-in-out bg-blue hover:bg-opacity-30 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-sm shadow-sm text-white bg-opacity-50 focus:shadow-outline"
-              >
-                Submit
-              </button>
+              <div className="flex justify-end">
+                <button
+                    type="submit"
+                    className="flex flex-end mt-4 transition duration-500 ease-in-out bg-blue hover:bg-opacity-30 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-sm shadow-sm text-white bg-opacity-50 focus:shadow-outline"
+                >
+                  Submit
+                </button>
+              </div>
             </form>
           </div>
         </div>
+        <Banner show={submitted} message={'Successfully submitted. Please check your email for confirmation.'} actionMessage={'Go back to homepage'}/>
       </div>
   )
 }

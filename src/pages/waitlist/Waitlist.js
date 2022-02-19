@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import {ExclamationCircleIcon} from "@heroicons/react/solid";
 import Banner from "../../components/Banner";
 
 function Waitlist() {

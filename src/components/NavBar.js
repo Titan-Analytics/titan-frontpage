@@ -88,7 +88,7 @@ function NavBar() {
           </span>
           
         </Link>
-        <HStack gap={10}>
+        <HStack gap={8}>
           {
             links.map( (el, idx ) => {
               return <ChakraLink as={Link} color="white" fontSize="lg" to={ el.link } key={"link" + idx}>

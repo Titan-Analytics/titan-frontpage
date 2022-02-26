@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { Suspense } from "react";
 import NavBar from "../NavBar";
 import Header from "./Hero";
@@ -13,6 +14,9 @@ import {
   Image as ChakraImage,
   Text,
   Center,
+  Grid,
+  Button,
+  HStack,
   Container,
 } from "@chakra-ui/react";
 
@@ -72,38 +76,100 @@ function History() {
   return (
     <>
 
-    <Suspense fallback={<div>Loading...</div>}>
-    <Box bg="black">
-        <Container maxWidth={1080} py={20} >
-          <Heading color="white" mb={5}>
-          Our History
-          </Heading>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Box bg="black">
 
-          <SimpleGrid columns={[1, 1, 2]} spacing={8} mb={10}>
-              <Box>
-              <Text color="white" fontSize="xl">
-              November 2021: Conducted one of the largest behavioural research
-                studies into play to earn gaming globally. Created visibility
-                into players' preferences and beliefs around gaming, and aligned
-                our strategy and product roadmap accordingly.
-                </Text>
+          <Container maxWidth={1080} py={20} >
+            <Fade bottom>
+              <Heading color="white" mb={5}>
+                Our History
+              </Heading>
 
-              </Box>
+              <SimpleGrid columns={[1, 1, 2]} spacing={8} mb={20}>
+                <Box>
 
-              <Box>
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/v6S2S0Pekgg"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              </Box>
+                  <Text color="white" fontSize="xl">
+                    September 2021: Titan Analytics was launched - becoming one of the winners in Solana’s global IGNITION hackathon.
+                  </Text>
 
-          </SimpleGrid>
-        </Container>
+
+
+                </Box>
+
+                <Box>
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/v6S2S0Pekgg"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </Box>
+
+              </SimpleGrid>
+
+            </Fade>
+            <Fade bottom>
+
+              <Grid templateColumns={["repeat(100%)", "repeat(100%)", "200px calc(100% - 200px)"]} mb={20}>
+                <Box>
+                  <Box height="200px" bg="gray.500" rounded="sm">
+
+                  </Box>
+
+                </Box>
+
+                <Box pl={[0, 0, 10]}>
+
+                  <Text color="white" fontSize="xl" maxWidth={500} mb={4}>
+                    November 2021: Conducted one of the largest behavioural research
+                    studies into play to earn gaming globally. Created visibility
+                    into players' preferences and beliefs around gaming, and aligned
+                    our strategy and product roadmap accordingly.
+                  </Text>
+
+                  <HStack>
+                    <Button colorScheme="green">
+                      READ MORE
+                    </Button>
+
+                  </HStack>
+                </Box>
+              </Grid>
+            </Fade>
+
+
+            <Fade bottom>
+
+              <SimpleGrid columns={[1, 1, 2]} spacing={8} mb={10}>
+                <Box>
+
+                  <Text color="white" fontSize="xl" maxWidth={500} mb={4}>
+                    Today: we’re focused on executing against our product roadmap and exploring partnership and investment opportunities.
+                  </Text>
+
+
+                  <HStack>
+                    <Button colorScheme="yellow">
+                      LATEST UPDATES
+                    </Button>
+
+                    <Button colorScheme="blue" as={Link} to="/contact">
+                      GET IN TOUCH
+                    </Button>
+                  </HStack>
+                </Box>
+
+                <Box >
+                  <ChakraImage height={[300, 300, 320]} width="100%" src="/hackers.png" alt="hackers" rounded="sm" />
+
+
+                </Box>
+              </SimpleGrid>
+            </Fade>
+          </Container>
         </Box>
       </Suspense>
     </>

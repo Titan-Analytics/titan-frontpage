@@ -1,11 +1,15 @@
 import { Suspense } from "react";
 import NavBar from "./NavBar";
-import Header from "./Header";
+import Hero from "./Hero";
 import AnimationCanvas from "./Animation";
 import styled from "styled-components";
 import Context from "./Context";
 import Solution from "./Solution";
 import History from "./History";
+import { 
+  Box
+} from "@chakra-ui/react";
+
 const TransparencyContainer = styled.div`
   margin-left: 8%;
   margin-right: 8%;
@@ -51,7 +55,7 @@ function Home() {
       <Section>
         <NavBar />
         <TransparencyContainer>
-          <Header />
+          <Hero />
         </TransparencyContainer>
       </Section>
       <FlexContainer>

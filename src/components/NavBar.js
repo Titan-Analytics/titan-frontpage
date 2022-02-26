@@ -1,5 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import {
+  Box,
+  HStack,
+  Link as ChakraLink, 
+} from "@chakra-ui/react";
 
 function NavBar() {
   const Nav = styled.nav`
@@ -13,8 +18,9 @@ function NavBar() {
   const NavOptions = styled.div`
     display: flex;
     flex-direction: row;
-    width: 40%;
+    flex-gap: 1rem;
     justify-content: space-between;
+
     @media (max-width: 600px) {
       display: none;
     }
@@ -22,14 +28,41 @@ function NavBar() {
   const Option = styled.a`
     margin-top: 1rem;
     font-weight: bold;
+    color: white;
+    cursor: pointer;
     transition: border-bottom ease-in 1.2s;
     &:hover {
       border-bottom: 2px solid white;
     }
   `;
 
+
+  const links = [
+    {
+      title: "Home",
+      link: "/",
+    },
+
+    {
+      title: "About",
+      link: "/about",
+    },
+
+    {
+      title: "History",
+      link: "/history",
+    },
+
+    {
+      title: "Blog",
+      link: "/blog",
+    },
+  ]
+
   return (
-    <>
+
+    <Box position="fixed" top={0} width="100vw" left={0}>
+
       <Nav>
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <svg
@@ -53,17 +86,18 @@ function NavBar() {
             TITAN
           </span>
         </div>
-        <NavOptions>
-          <Option>Contact</Option>
-          <Option>About</Option>
-          <Option>History</Option>
-          <Option>Blog</Option>
-          {/*<div className="transition duration-500 ease-in-out bg-blue bg-opacity-30 px-sm py-xs inline-block text-md leading-none rounded focus:shadow-outline hover:bg-opacity-50 text-white ">*/}
-          {/*  <button>Join the waitlist</button>*/}
-          {/*</div>*/}
-        </NavOptions>
+        <HStack gap={10}>
+          {
+            links.map( (el, idx ) => {
+              return <ChakraLink color="white" fontSize="lg" href={ el.link } key={"link" + idx}>
+                {el.title}
+              </ChakraLink>
+            })
+          }
+         
+        </HStack>
       </Nav>
-    </>
+    </Box>
   );
 }
 

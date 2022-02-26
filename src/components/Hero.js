@@ -2,16 +2,18 @@ import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 import {Link} from "react-router-dom";
+import { Box } from "@chakra-ui/react";
 
 const Container = styled.div`
   margin-top: 5%;
 `;
 
-function Header() {
+function Hero () {
   const [showModal, setShowModal] = React.useState(false);
   console.log(showModal);
 
   return (
+    <Box pt={20}>
     <Container>
       <div>
         <h2 className="font-normal leading-normal mb-2 text-white">
@@ -48,7 +50,8 @@ function Header() {
         {/*</div>*/}
       </div>
     </Container>
+    </Box>
   );
 }
 
-export default Header;
+export default Hero;

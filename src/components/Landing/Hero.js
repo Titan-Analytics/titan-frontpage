@@ -7,6 +7,7 @@ import {
   Heading,
   HStack,
 
+  Container, 
 } from "@chakra-ui/react";
 import { BiChevronRight } from "react-icons/bi";
 
@@ -15,7 +16,8 @@ function Hero() {
   console.log(showModal);
 
   return (
-    <Box pt={"150px"} pb={90}>
+    <Box pt={"30vh"} height="100vh" >
+    <Container maxWidth={1080}>
       <Box mb={4}>
         <h2 className="font-normal leading-normal mb-2 text-white">
           Launching Q2 2022
@@ -42,6 +44,8 @@ function Hero() {
           GET IN TOUCH
         </Button>
       </HStack>
+
+      </Container>
         {/*<div className="mr-sm transition duration-500 ease-in-out bg-blue bg-opacity-30 px-sm py-xs inline-block text-md leading-none rounded focus:shadow-outline hover:bg-opacity-50 text-white mt-4 lg:mt-0">*/}
         {/*  <button className="cursor-pointer" onClick={() => setShowModal(true)}>*/}
         {/*    <Link to="/waitlist">Sign up for early access!</Link>*/}

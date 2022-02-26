@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import NavBar from "./NavBar";
-import Header from "./Hero";
+import Header from "./Landing/Hero";
 import AnimationCanvas from "./Animation";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";

@@ -1,11 +1,11 @@
 import { Suspense } from "react";
-import NavBar from "./NavBar";
-import Hero from "./Landing/Hero";
-import AnimationCanvas from "./Animation";
+import NavBar from "../components/NavBar";
+import Hero from "../components/Landing/Hero";
+import AnimationCanvas from "../components/Animation";
 import styled from "styled-components";
-import Context from "./Landing/Context";
-import Solution from "./Solution";
-import History from "./History";
+import Context from "../components/Landing/Context";
+import Solution from "../components/Solution";
+import History from "../components/History";
 import { 
   Box
 } from "@chakra-ui/react";
@@ -58,10 +58,7 @@ function Home() {
           <Hero />
         </TransparencyContainer>
       </Section>
-      <FlexContainer>
-        <Image src="solana.png" />
-        <Image2 src="ignition.png" />
-      </FlexContainer>
+      
       <Context />
       <Solution />
       <History />

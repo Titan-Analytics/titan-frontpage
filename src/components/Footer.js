@@ -53,20 +53,20 @@ function Footer() {
         </Box>
 
         <HStack gap={5} color="white" fontSize="2xl" >
-          <Box>
-            <FaFacebook />
+          <Box rounded="lg" _hover={{transform: "scale(1.1)"}} transition="0.2s ease">
+            <FaFacebook style={{cursor: "pointer",}} />
           </Box>
-          <Box>
-            <FaInstagram />
+          <Box rounded="lg" _hover={{transform: "scale(1.1)"}} transition="0.2s ease">
+            <FaInstagram style={{cursor: "pointer"}}  />
           </Box>
-          <Box>
-            <FaTwitter />
+          <Box rounded="lg" _hover={{transform: "scale(1.1)"}} transition="0.2s ease">
+            <FaTwitter style={{cursor: "pointer"}}  />
           </Box>
 
         </HStack>
 
 
-        <Button colorScheme="purple" >
+        <Button colorScheme="purple" as={ Link } to="/waitlist">
           EARLY ACCESS
         </Button>
 

@@ -18,12 +18,13 @@ function Hero() {
   return (
     <Box pt={"30vh"} height="100vh" >
     <Container maxWidth={1080}>
+    <Fade>
+
       <Box mb={4}>
         <h2 className="font-normal leading-normal mb-2 text-white">
           Launching Q2 2022
         </h2>
       </Box>
-      <Fade>
         <Box mb={4} className="container text-white" >
           <Heading mb={1} as="h1" size="xl">Personalized Performance Management</Heading>
           <Heading as="h1" size="xl">Built for the Metaverse</Heading>
@@ -34,7 +35,6 @@ function Hero() {
 
           </h2>
         </Box>
-      </Fade>
       <HStack mt={5}>
         <Button colorScheme="purple" as={Link} to="/waitlist" >
           EARLY ACCESS
@@ -44,6 +44,9 @@ function Hero() {
           GET IN TOUCH
         </Button>
       </HStack>
+
+      </Fade>
+
 
       </Container>
         {/*<div className="mr-sm transition duration-500 ease-in-out bg-blue bg-opacity-30 px-sm py-xs inline-block text-md leading-none rounded focus:shadow-outline hover:bg-opacity-50 text-white mt-4 lg:mt-0">*/}

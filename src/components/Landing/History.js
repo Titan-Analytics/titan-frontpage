@@ -1,10 +1,22 @@
 import { Suspense } from "react";
-import NavBar from "./NavBar";
-import Header from "./Landing/Hero";
+import NavBar from "../NavBar";
+import Header from "./Hero";
 import AnimationCanvas from "./Animation";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
-import NewsCard from "./NewsCard";
+import NewsCard from "../NewsCard";
+
+import {
+  Heading,
+  SimpleGrid,
+  Box,
+  Image as ChakraImage,
+  Text,
+  Center,
+  Container,
+} from "@chakra-ui/react";
+
+
 const Section = styled.div`
   padding: 8%;
   padding-top: 0;
@@ -59,17 +71,26 @@ function History() {
   ];
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Section>
-          <Fade bottom>
-            <div className="text-4xl lg:text-4xl md:text-5xl sm:text-4xl font-bold leading-normal text-white">
-              <h1 id="context">Our History</h1>
-            </div>
-          </Fade>
-          <TextContainer>
-            <LeftContainer>{CONTENT[0].text}</LeftContainer>
 
-            <div>
+    <Suspense fallback={<div>Loading...</div>}>
+    <Box bg="black">
+        <Container maxWidth={1080} py={20} >
+          <Heading color="white" mb={5}>
+          Our History
+          </Heading>
+
+          <SimpleGrid columns={[1, 1, 2]} spacing={8} mb={10}>
+              <Box>
+              <Text color="white" fontSize="xl">
+              November 2021: Conducted one of the largest behavioural research
+                studies into play to earn gaming globally. Created visibility
+                into players' preferences and beliefs around gaming, and aligned
+                our strategy and product roadmap accordingly.
+                </Text>
+
+              </Box>
+
+              <Box>
               <iframe
                 width="560"
                 height="315"
@@ -79,18 +100,11 @@ function History() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
-            </div>
-            <LeftContainer>
-              {" "}
-              <TextContainer>
-                November 2021: Conducted one of the largest behavioural research
-                studies into play to earn gaming globally. Created visibility
-                into players' preferences and beliefs around gaming, and aligned
-                our strategy and product roadmap accordingly.
-              </TextContainer>
-            </LeftContainer>
-          </TextContainer>
-        </Section>
+              </Box>
+
+          </SimpleGrid>
+        </Container>
+        </Box>
       </Suspense>
     </>
   );

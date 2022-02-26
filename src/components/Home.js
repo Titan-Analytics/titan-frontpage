@@ -1,11 +1,11 @@
 import { Suspense } from "react";
 import NavBar from "./NavBar";
 import Hero from "./Landing/Hero";
-import AnimationCanvas from "./Animation";
+import AnimationCanvas from "./Landing/Animation";
 import styled from "styled-components";
 import Context from "./Landing/Context";
-import Solution from "./Solution";
-import History from "./History";
+import Solution from "./Landing/Solution";
+import History from "./Landing/History";
 import { 
   Box
 } from "@chakra-ui/react";

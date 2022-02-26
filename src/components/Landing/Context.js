@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import NavBar from "../NavBar";
 import Header from "./Hero";
-import AnimationCanvas from "../Animation";
+import AnimationCanvas from "./Animation";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 import {
@@ -50,55 +50,56 @@ const DarkContainer = styled.div`
 function Context() {
   return (
     <>
-      <Container maxWidth={1080} py={20} className="container m-auto">
-        <Fade bottom>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Container maxWidth={1080} py={20} >
+          <Fade bottom>
 
-          <Heading textAlign={["center", "center", "left"]} mb={5}>
-            Context
-          </Heading>
+            <Heading textAlign={["center", "center", "left"]} mb={5}>
+              Context
+            </Heading>
 
-          <SimpleGrid columns={[1, 1, 2]} spacing={8} mb={10}>
-            <Box>
-              <Text fontSize="xl">
-                Blockchain gaming is facilitating a generational shift in value from game producers to game players, and it’s driving explosive adoption of a new generation of games.
-              </Text>
-            </Box>
-
-            <Box>
-              <ChakraImage height={[300, 300, 320]} src="/florian.jpeg" alt="florian" rounded="sm" />
-            </Box>
-          </SimpleGrid>
-        </Fade>
-
-
-        <Fade bottom>
-
-          <Heading textAlign={["center", "center", "right"]} mb={5}>
-            Problem & Solution
-          </Heading>
-
-          <SimpleGrid columns={[1, 1, 2]} spacing={8}>
-            <Box>
-
-              <ChakraImage src="/display.png" alt="Display" height={[300, 300, 320]} rounded="sm" objectFit="cover" />
-            </Box>
-            <Box fontSize="xl" textAlign={["center", "center", "right"]}>
+            <SimpleGrid columns={[1, 1, 2]} spacing={8} mb={20}>
               <Box>
-
-                <Text mb={4}>
-                  Both players and guilds are united in their desire to maximize success, but they lack the insights and performance management capabilities required to do so.
-                </Text>
-
-                <Text>
-                  Our personalized player performance management platform arms players with the insights needed to inform their in-game strategy, learn from their mistakes, and get better over time.
+                <Text fontSize="xl">
+                  Blockchain gaming is facilitating a generational shift in value from game producers to game players, and it’s driving explosive adoption of a new generation of games.
                 </Text>
               </Box>
-            </Box>
-          </SimpleGrid>
-        </Fade>
-      </Container>
+
+              <Box>
+                <ChakraImage height={[300, 300, 320]} width="100%" src="/florian.jpeg" alt="florian" rounded="sm" />
+              </Box>
+            </SimpleGrid>
+          </Fade>
 
 
+          <Fade bottom>
+
+            <Heading textAlign={["center", "center", "right"]} mb={5}>
+              Problem & Solution
+            </Heading>
+
+            <SimpleGrid columns={[1, 1, 2]} spacing={8} mb={10}>
+              <Box>
+
+                <ChakraImage src="/display.png" width="100%" alt="Display" height={[300, 300, 320]} rounded="sm" objectFit="cover" />
+              </Box>
+              <Box fontSize="xl" textAlign={["center", "center", "right"]}>
+                <Box>
+
+                  <Text mb={4}>
+                    Both players and guilds are united in their desire to maximize success, but they lack the insights and performance management capabilities required to do so.
+                  </Text>
+
+                  <Text>
+                    Our personalized player performance management platform arms players with the insights needed to inform their in-game strategy, learn from their mistakes, and get better over time.
+                  </Text>
+                </Box>
+              </Box>
+            </SimpleGrid>
+          </Fade>
+        </Container>
+
+      </Suspense>
 
 
       {/* <Suspense fallback={<div>Loading...</div>}>

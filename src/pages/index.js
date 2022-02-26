@@ -1,11 +1,10 @@
 import { Suspense } from "react";
 import NavBar from "../components/NavBar";
-import Hero from "../components/Landing/Hero";
-import AnimationCanvas from "../components/Animation";
+
 import styled from "styled-components";
-import Context from "../components/Landing/Context";
-import Solution from "../components/Solution";
-import History from "../components/History";
+
+import { Hero, AnimationCanvas, Context, History } from "../components/Landing";
+
 import { 
   Box
 } from "@chakra-ui/react";
@@ -60,7 +59,6 @@ function Home() {
       </Section>
       
       <Context />
-      <Solution />
       <History />
     </>
   );

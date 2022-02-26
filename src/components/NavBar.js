@@ -1,4 +1,4 @@
-import React from "react";
+import {Link} from "react-router-dom";
 import styled from "styled-components";
 import {
   Box,
@@ -11,7 +11,8 @@ function NavBar() {
     display: flex;
     margin: auto;
     justify-content: space-between;
-    padding-top: 1.4rem;
+    padding-top: 1.15rem;
+    padding-bottom: 1.15rem;
     padding-left: 2.4rem;
     padding-right: 2.4rem;
   `;
@@ -61,10 +62,10 @@ function NavBar() {
 
   return (
 
-    <Box position="fixed" top={0} width="100vw" left={0}>
-
+    <Box position="fixed" top={0} width="100vw" left={0} bg="#1e0441c7" backdropFilter={"blur(8px)"} zIndex={1000}>
       <Nav>
-        <div className="flex items-center flex-shrink-0 text-white mr-6">
+        <Link to="/" className="flex items-center flex-shrink-0 text-white mr-6">
+        
           <svg
             width="26"
             height="31"
@@ -82,14 +83,15 @@ function NavBar() {
             />
           </svg>
 
-          <span className="font-semibold text-xl tracking-tight ml-xs">
+          <span className="font-semibold text-2xl tracking-tight ml-2">
             TITAN
           </span>
-        </div>
+          
+        </Link>
         <HStack gap={10}>
           {
             links.map( (el, idx ) => {
-              return <ChakraLink color="white" fontSize="lg" href={ el.link } key={"link" + idx}>
+              return <ChakraLink as={Link} color="white" fontSize="lg" to={ el.link } key={"link" + idx}>
                 {el.title}
               </ChakraLink>
             })

@@ -1,45 +1,42 @@
 import React from "react";
-import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 import {Link} from "react-router-dom";
-import { Box } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Heading, 
 
-const Container = styled.div`
-  margin-top: 5%;
-`;
+} from "@chakra-ui/react";
+import { BiChevronRight } from "react-icons/bi";
 
 function Hero () {
   const [showModal, setShowModal] = React.useState(false);
   console.log(showModal);
 
   return (
-    <Box pt={20}>
-    <Container>
+    <Box pt={"120px"} pb={90}>
       <div>
         <h2 className="font-normal leading-normal mb-2 text-white">
           Launching Q2 2022
         </h2>
       </div>
       <Fade>
-        <div className="container flex-col mt-5 text-4xl lg:text-6xl md:text-5xl sm:text-4xl font-bold leading-normal mt-0 mb-2 text-white">
-          <h1>Commercial analytics</h1>
-          <h1>Built for the Metaverse</h1>
-        </div>
-        <div className="mt-sm">
+        <Box py={4} className="container text-white" mb={2}>
+          <Heading mb={2} as="h1" size="3xl">Commercial analytics</Heading>
+          <Heading as="h1" size="3xl">Built for the Metaverse</Heading>
+        </Box>
+        <Box className="mt-sm" maxWidth={800}>
           <h2 className="font-normal leading-normal mt-0 mb-2 text-white">
             Modern analytics to support play to earn gaming and NFT trading.
             Quickly spot opportunities in the market and maximize earning
             potential.{" "}
           </h2>
-        </div>
+        </Box>
       </Fade>
       <div className="my-sm">
-        <button
-            type="button"
-            className="mt-4 transition duration-500 ease-in-out bg-blue bg-opacity-30 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-sm shadow-sm text-white hover:bg-opacity-50 focus:shadow-outline"
-        >
-          <Link to="/waitlist">Sign up for early access!</Link>
-        </button>
+        <Button mt={ 5 } colorScheme="purple" as={ Link } to="/waitlist" rightIcon={ <BiChevronRight style={{fontSize: 20}} /> }>
+          EARLY ACCESS
+        </Button>
         {/*<div className="mr-sm transition duration-500 ease-in-out bg-blue bg-opacity-30 px-sm py-xs inline-block text-md leading-none rounded focus:shadow-outline hover:bg-opacity-50 text-white mt-4 lg:mt-0">*/}
         {/*  <button className="cursor-pointer" onClick={() => setShowModal(true)}>*/}
         {/*    <Link to="/waitlist">Sign up for early access!</Link>*/}
@@ -49,7 +46,6 @@ function Hero () {
         {/*  <button>Get in Touch</button>*/}
         {/*</div>*/}
       </div>
-    </Container>
     </Box>
   );
 }

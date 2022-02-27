@@ -50,8 +50,8 @@ function NavBar() {
     },
 
     {
-      title: "History",
-      link: "/history",
+      title: "Report",
+      link: "/report",
     },
 
     {

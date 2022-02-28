@@ -43,7 +43,6 @@ function FullReport() {
             <Text color="gray.400" fontSize="sm" mb={8}>
               This report was prepared by Titan Analytics Inc., in collaboration with a41 Ventures.
             </Text>
-
           </Box>
         </Fade>
       </Container>

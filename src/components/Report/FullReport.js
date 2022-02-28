@@ -44,9 +44,6 @@ function FullReport() {
               This report was prepared by Titan Analytics Inc., in collaboration with a41 Ventures.
             </Text>
 
-            <Button rightIcon={<BiChevronRight style={{ fontSize: 20 }} />}>
-              Continue
-            </Button>
           </Box>
         </Fade>
       </Container>

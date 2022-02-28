@@ -23,7 +23,6 @@ function ExecutiveSummary() {
 
       <Container maxWidth={880} py={12}>
         <Fade bottom>
-          <Box mb={4}>
             <Heading size="lg" mb={4}>
               CONTEXT & PURPOSE
             </Heading>
@@ -53,13 +52,7 @@ function ExecutiveSummary() {
             </Grid>
 
 
-            <Button rightIcon={<BiChevronRight style={{ fontSize: 20 }} />}>
-              Continue
-            </Button>
 
-
-
-          </Box>
         </Fade>
       </Container>
     </Box>

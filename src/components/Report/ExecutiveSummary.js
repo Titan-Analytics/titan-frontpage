@@ -23,7 +23,7 @@ function ExecutiveSummary() {
 
       <Container maxWidth={880} py={12}>
         <Fade bottom>
-            <Heading size="lg" mb={4}>
+            <Heading mb={4}>
               CONTEXT & PURPOSE
             </Heading>
 

@@ -9,6 +9,7 @@ import {
   Image as ChakraImage,
   Text,
   Container,
+  Link as ChakraLink, 
 } from "@chakra-ui/react";
 import { BiChevronRight } from "react-icons/bi";
 
@@ -36,12 +37,14 @@ function FullReport() {
               A BEHAVIOR ANALYSIS
             </Heading>
 
-            <Text color="red.400" textTransform={"uppercase"}>
-              © 2022 Titan Analytics Inc. All rights reserved.
+           
+
+            <Text color="gray.500" mb={4}>
+              This report was prepared by <ChakraLink as={Link} to="/">Titan Analytics Inc.</ChakraLink>, in collaboration with <ChakraLink href="https://www.a41ventures.com/" target={"_blank"}>a41 Ventures</ChakraLink>.
             </Text>
 
-            <Text color="gray.400" fontSize="sm" mb={8}>
-              This report was prepared by Titan Analytics Inc., in collaboration with a41 Ventures.
+            <Text color="red.400" textTransform={"uppercase"} fontSize="sm">
+              © 2022 Titan Analytics Inc. All rights reserved.
             </Text>
           </Box>
         </Fade>

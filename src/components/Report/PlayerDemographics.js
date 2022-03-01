@@ -52,7 +52,7 @@ function PlayerDemographics() {
               </Heading>
 
               <Text p={2} px={3} bg='gray.100' display="inline-block" rounded="md" mx={3}>
-                {"~75% were born between 1986 and 2000 (between 21 and 35 years old); average age is 30."} 
+                {"~75% were born between 1986 and 2000 (between 21 and 35 years old); average age is 30."}
               </Text>
 
               <Box height="420px" position="relative">
@@ -62,19 +62,19 @@ function PlayerDemographics() {
             </Box>
 
             <Box>
-              <Heading size="lg">
+              <Heading size="lg" mb={2}>
                 Education
               </Heading>
 
+              <Text p={2} px={3} bg='gray.100' display="inline-block" rounded="md" mx={3}>
+                {">80% have a post-secondary degree"} 
+              </Text>
+
+              <Box height="420px" position="relative">
+              <Education />
+              </Box>
             </Box>
-
-            <Box>
-              <Heading size="lg">
-                Gender
-              </Heading>
-
-            </Box>
-
+          
             <Box>
               <Heading size="lg" mb={2}>
                 Country of Origin
@@ -106,16 +106,6 @@ function PlayerDemographics() {
             </Box>
 
           </SimpleGrid>
-
-          <Text mb={4}>
-            As the P2E market matures, we expect to see growth in the total number of players, as well as diversification of segments. We believe that game producers, guilds, and investment firms armed with a strong fact-base in which to ground their decisions, will possess the knowledge needed to best serve their users, and ultimately conquer a niche in the market.
-          </Text>
-
-          <Text mb={4}>
-            We hope that this study serves to support both the Web3 community and the public at large, in understanding the P2E market and game players, and we look forward to participate in its growth and development in the coming years.
-          </Text>
-
-
 
 
         </Fade>
@@ -234,7 +224,96 @@ const Age = () => {
         '1991 - 1995',
         '1996 - 2000',
         '>=2000',
-      ].reverse() }
+      ].reverse()}
+      indexBy="demo"
+      margin={{ top: 30, right: 130, bottom: 50, left: 60 }}
+      padding={0.3}
+      valueScale={{ type: 'linear' }}
+      indexScale={{ type: 'band', round: true }}
+      colors={{ scheme: 'nivo' }}
+      axisTop={null}
+      axisRight={null}
+      axisBottom={{
+        tickSize: 5,
+        tickPadding: 5,
+        tickRotation: 0,
+        // legend: 'Holdings',
+        legendPosition: 'middle',
+        legendOffset: 32
+      }}
+      axisLeft={{
+        tickSize: 5,
+        tickPadding: 5,
+        tickRotation: 0,
+        legend: 'Percentage',
+        legendPosition: 'middle',
+        legendOffset: -40
+      }}
+      labelSkipWidth={12}
+      labelSkipHeight={12}
+      labelTextColor={{
+        from: 'color',
+        modifiers: [
+          [
+            'darker',
+            1.6
+          ]
+        ]
+      }}
+      legends={[
+        {
+          dataFrom: 'keys',
+          anchor: 'bottom-right',
+          direction: 'column',
+          justify: false,
+          translateX: 120,
+          translateY: 0,
+          itemsSpacing: 2,
+          itemWidth: 100,
+          itemHeight: 20,
+          itemDirection: 'left-to-right',
+          itemOpacity: 0.85,
+          symbolSize: 20,
+          effects: [
+            {
+              on: 'hover',
+              style: {
+                itemOpacity: 1
+              }
+            }
+          ]
+        }
+      ]}
+      role="application"
+      ariaLabel="Gender"
+      valueFormat={value => `${value}%`}
+    />
+  )
+}
+
+
+const Education = () => {
+
+  const data = [
+    {
+      "demo": "Education",
+      'Graduate Degree': 10.3,
+      'Associates Degree': 10.3,
+      'Technical or Occupational Certificate': 12.1,
+      'High School or Equivalent': 22.7,
+      'Bachelors Degree': 44.6,
+    },
+  ];
+  return (
+    <ResponsiveBar
+      data={data}
+      keys={[
+        'Graduate Degree',
+      'Associates Degree',
+      'Technical or Occupational Certificate',
+      'High School or Equivalent',
+      'Bachelors Degree',
+      ].reverse()}
       indexBy="demo"
       margin={{ top: 30, right: 130, bottom: 50, left: 60 }}
       padding={0.3}
@@ -307,18 +386,22 @@ const CountryOfOrigin = () => {
   const data = [
     {
       "demo": "Country of Origin",
+      "Other": 35.5,
       'Phillipenes': 21.2,
       'Vietnam': 20,
       'Republic of Korea': 8.6,
       'Brazil': 5.5,
       'China': 4.75,
       'Indonesia': 4.5,
+
     },
   ];
+
   return (
     <ResponsiveBar
       data={data}
       keys={[
+        "Other",
         'Phillipenes',
         'Vietnam',
         'Republic of Korea',

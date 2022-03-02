@@ -24,13 +24,13 @@ function PlayerDemographics() {
     <Box >
       <ChakraImage width="100%" src="/player-demographics.jpeg" objectFit={"cover"} height="400px" alt="Player Demographics" rounded="sm" />
 
-      <Container maxWidth={880} py={12}>
+      <Container maxWidth={950} py={12}>
         <Fade bottom>
           <Heading textTransform={"uppercase"} mb={4}>
             Player Demographics
           </Heading>
 
-          <SimpleGrid columns={[1, 1, 2]} spacing={8}>
+          <SimpleGrid columns={[1, 1, 2]} spacingX={12} spacingY={4}>
             <Box>
               <Heading size="lg" mb={2}>
                 Gender

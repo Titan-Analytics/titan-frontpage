@@ -22,7 +22,7 @@ function FullReport() {
       <ChakraImage width="100%" src="/report-cover.png" objectFit={"cover"} height="320px" alt="Full Report" rounded="sm" />
 
 
-      <Container maxWidth={880} py={12}>
+      <Container maxWidth={950} py={12}>
         <Fade>
           <Box mb={4}>
             <Heading size="lg" mb={4}>

@@ -22,7 +22,7 @@ function GamePreference() {
       <ChakraImage width="100%" src="/game-preference.jpeg" objectFit={"cover"} height="400px" alt="Full Report" rounded="sm" />
 
 
-      <Container maxWidth={880} py={12}>
+      <Container maxWidth={950} py={12}>
         <Fade bottom>
 
           <Heading mb={4} textTransform="uppercase">

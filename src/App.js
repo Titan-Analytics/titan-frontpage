@@ -4,6 +4,7 @@ import Home from "./pages/index";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Waitlist from "./pages/waitlist";
 import Report from "./pages/report";
+import Contact from "./pages/contact";
 function App() {
   return (
     <div>
@@ -13,6 +14,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="waitlist" element={<Waitlist />} />
             <Route path="report" element={<Report />} />
+            <Route path="contact" element={<Contact />} />
           </Routes>
         </BrowserRouter>
       </Suspense>

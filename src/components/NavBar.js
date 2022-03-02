@@ -44,10 +44,6 @@ function NavBar() {
       link: "/",
     },
 
-    {
-      title: "About",
-      link: "/about",
-    },
 
     {
       title: "Report",
@@ -55,9 +51,15 @@ function NavBar() {
     },
 
     {
-      title: "Blog",
-      link: "/blog",
+      title: "Early Access",
+      link: "/waitlist",
     },
+
+    {
+      title: "Contact",
+      link: "/contact",
+    },
+
   ]
 
   return (

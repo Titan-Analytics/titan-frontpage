@@ -67,7 +67,7 @@ function Conclusion() {
                 </Box>
 
                 <Box>
-                  <ChakraImage width="100%" src="/woman-stars.png" objectFit={"cover"} minHeight="220px" height="100%" alt="Woman Stars" rounded="sm" />
+                  <ChakraImage width="100%" src="/woman-stars.jpeg" objectFit={"cover"} minHeight="220px" height="100%" alt="Woman Stars" rounded="sm" />
                 </Box>
               </Grid>
             </ListItem>
@@ -85,7 +85,7 @@ function Conclusion() {
                 </Box>
 
                 <Box>
-                  <ChakraImage width="100%" src="/big-data.png" objectFit={"cover"} minHeight="220px" height="100%" alt="Big Data" rounded="sm" />
+                  <ChakraImage width="100%" src="/big-data.jpeg" objectFit={"cover"} minHeight="220px" height="100%" alt="Big Data" rounded="sm" />
                 </Box>
               </Grid>
             </ListItem>

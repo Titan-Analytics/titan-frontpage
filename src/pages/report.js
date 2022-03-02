@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { PlayerDemographics, FullReport, ExecutiveSummary, Conclusion, ClosingStatement } from "../components/Report";
+import { GamePreference, PlayerDemographics, FullReport, ExecutiveSummary, Conclusion, ClosingStatement } from "../components/Report";
 import Layout from "../components/layout";
 
 const TransparencyContainer = styled.div`
@@ -13,15 +13,13 @@ const TransparencyContainer = styled.div`
 function Report() {
   return (
     <>
-
-
-
       <Layout>
         <FullReport />
         <ExecutiveSummary />
         <Conclusion />
         <ClosingStatement />
         <PlayerDemographics />
+        <GamePreference />
       </Layout>
     </>
   );

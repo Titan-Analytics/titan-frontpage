@@ -22,7 +22,7 @@ function Conclusion() {
 
   return (
     <Box >
-      <ChakraImage width="100%" src="/exec-summary.jpeg" objectFit={"cover"} height="400px" alt="Full Report" rounded="sm" />
+      <ChakraImage width="100%" src="/exec-summary.jpeg" objectFit={"cover"} height="400px" alt="Full Report" loading="lazy" rounded="sm" />
 
       <Container maxWidth={950} py={12}>
         <Fade bottom>
@@ -48,7 +48,7 @@ function Conclusion() {
                 </Box>
 
                 <Box>
-                  <ChakraImage width="100%" src="/handsome-gamer.png" objectFit={"cover"} minHeight="220px" height="100%" alt="Handsome Gamer" rounded="sm" />
+                  <ChakraImage width="100%" src="/handsome-gamer.png" objectFit={"cover"} minHeight="220px" height="100%" alt="Handsome Gamer" loading="lazy" rounded="sm" />
                 </Box>
               </Grid>
             </ListItem>
@@ -67,7 +67,7 @@ function Conclusion() {
                 </Box>
 
                 <Box>
-                  <ChakraImage width="100%" src="/woman-stars.jpeg" objectFit={"cover"} minHeight="220px" height="100%" alt="Woman Stars" rounded="sm" />
+                  <ChakraImage width="100%" src="/woman-stars.jpeg" objectFit={"cover"} minHeight="220px" height="100%" alt="Woman Stars" loading="lazy" rounded="sm" />
                 </Box>
               </Grid>
             </ListItem>
@@ -85,7 +85,7 @@ function Conclusion() {
                 </Box>
 
                 <Box>
-                  <ChakraImage width="100%" src="/big-data.jpeg" objectFit={"cover"} minHeight="220px" height="100%" alt="Big Data" rounded="sm" />
+                  <ChakraImage width="100%" src="/big-data.jpeg" objectFit={"cover"} minHeight="220px" height="100%" alt="Big Data" loading="lazy" rounded="sm" />
                 </Box>
               </Grid>
             </ListItem>

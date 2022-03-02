@@ -4,5 +4,6 @@ import Conclusion from "./Conclusion";
 import ClosingStatement from "./ClosingStatement";
 import PlayerDemographics from "./PlayerDemographics";
 import GamePreference from "./GamePreference";
+import MarketSegmentation from "./MarketSegmentation";
 
-export { FullReport, ExecutiveSummary, Conclusion, ClosingStatement, PlayerDemographics, GamePreference };
+export {MarketSegmentation, FullReport, ExecutiveSummary, Conclusion, ClosingStatement, PlayerDemographics, GamePreference };

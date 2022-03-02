@@ -19,7 +19,7 @@ function GamePreference() {
 
   return (
     <Box >
-      <ChakraImage width="100%" src="/game-preference.jpeg" objectFit={"cover"} height="400px" alt="Full Report" rounded="sm" />
+      <ChakraImage width="100%" src="/game-preference.jpeg" objectFit={"cover"} height="400px" alt="Full Report" loading="lazy" rounded="sm" />
 
 
       <Container maxWidth={950} py={12}>

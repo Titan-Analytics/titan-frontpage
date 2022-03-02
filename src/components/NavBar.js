@@ -55,10 +55,10 @@ function NavBar() {
       link: "/waitlist",
     },
 
-    {
-      title: "Contact",
-      link: "/contact",
-    },
+    // {
+    //   title: "Contact",
+    //   link: "/contact",
+    // },
 
   ]
 

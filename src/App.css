@@ -21,5 +21,5 @@ body {
 
 ol li::marker {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
 }

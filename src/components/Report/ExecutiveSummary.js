@@ -19,7 +19,7 @@ function ExecutiveSummary() {
 
   return (
     <Box >
-      <ChakraImage width="100%" src="/exec-summary.jpeg" objectFit={"cover"} height="400px" alt="Full Report" rounded="sm" />
+      <ChakraImage width="100%" src="/exec-summary.jpeg" objectFit={"cover"} height="400px" alt="Full Report" rounded="sm" loading="lazy" />
 
       <Container maxWidth={950} py={12}>
         <Fade bottom>
@@ -45,7 +45,7 @@ function ExecutiveSummary() {
 
             </Box>
 
-            <ChakraImage width="100%" src="/activision.png" objectFit={"cover"} height="220px" alt="Activision Blizzard Microsoft" rounded="sm" />
+            <ChakraImage width="100%" src="/mac.jpeg" objectFit={"cover"} height="220px" alt="Activision Blizzard Microsoft" rounded="sm" loading="lazy" />
 
             </Box>
 

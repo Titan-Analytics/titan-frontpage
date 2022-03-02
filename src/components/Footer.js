@@ -50,9 +50,14 @@ function Footer() {
             </span>
 
           </Link>
+
+
+          <Button colorScheme="purple" as={ Link } to="/waitlist" mt={4}>
+          EARLY ACCESS
+        </Button>
         </Box>
 
-        <HStack gap={5} color="white" fontSize="2xl" >
+        <HStack gap={5} color="white" fontSize="2xl" display="none" >
           <Box rounded="lg" _hover={{transform: "scale(1.1)"}} transition="0.2s ease">
             <FaFacebook style={{cursor: "pointer",}} />
           </Box>
@@ -66,9 +71,7 @@ function Footer() {
         </HStack>
 
 
-        <Button colorScheme="purple" as={ Link } to="/waitlist">
-          EARLY ACCESS
-        </Button>
+       
 
 
 

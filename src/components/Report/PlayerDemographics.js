@@ -22,7 +22,7 @@ function PlayerDemographics() {
 
   return (
     <Box >
-      <ChakraImage width="100%" src="/player-demographics.jpeg" objectFit={"cover"} height="400px" alt="Player Demographics" rounded="sm" />
+      <ChakraImage width="100%" src="/matrix.jpeg" objectFit={"cover"} height="400px" alt="Player Demographics" loading="lazy" rounded="sm" />
 
       <Container maxWidth={950} py={12}>
         <Fade bottom>

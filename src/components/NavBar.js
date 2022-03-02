@@ -39,10 +39,10 @@ function NavBar() {
 
 
   const links = [
-    {
-      title: "Home",
-      link: "/",
-    },
+    // {
+    //   title: "Home",
+    //   link: "/",
+    // },
 
 
     {
@@ -55,10 +55,10 @@ function NavBar() {
       link: "/waitlist",
     },
 
-    // {
-    //   title: "Contact",
-    //   link: "/contact",
-    // },
+    {
+      title: "Contact",
+      link: "/",
+    },
 
   ]
 

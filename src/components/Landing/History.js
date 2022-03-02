@@ -115,9 +115,7 @@ function History() {
 
               <Grid templateColumns={["repeat(100%)", "repeat(100%)", "200px calc(100% - 200px)"]} mb={20}>
                 <Box>
-                  <Box height="200px" bg="gray.500" rounded="sm">
-
-                  </Box>
+                    <ChakraImage objectPosition={"15% 50%"} src="/cont.jpeg" rounded="sm" loading="lazy" height="100%" objectFit="cover" />
 
                 </Box>
 

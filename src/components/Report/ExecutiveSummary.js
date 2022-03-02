@@ -11,7 +11,7 @@ import {
   Container,
   Grid, 
 } from "@chakra-ui/react";
-import { BiChevronRight } from "react-icons/bi";
+import { ResponsiveBar } from '@nivo/bar'
 
 function ExecutiveSummary() {
   const [showModal, setShowModal] = React.useState(false);
@@ -41,7 +41,12 @@ function ExecutiveSummary() {
 
             <Box>
 
-            <Box height="260px" bg="gray.500" rounded="sm" mb={14}>
+            <Heading size="sm" color="gray.700" textAlign="center">
+              Search volume: "Play to earn"
+            </Heading>
+            <Box height="260px"rounded="sm" mb={14}>
+
+            <SearchVolume ></SearchVolume>
 
             </Box>
 
@@ -60,3 +65,114 @@ function ExecutiveSummary() {
 }
 
 export default ExecutiveSummary;
+
+
+
+const SearchVolume = () => {
+
+  const data = [
+    {
+      "demo": "Feb",
+      "Volume": 12, 
+    },
+
+    {
+      "demo": "Mar",
+      "Volume": 12, 
+    },
+
+    {
+      "demo": "Apr",
+      "Volume": 12, 
+    },
+
+    {
+      "demo": "May",
+      "Volume": 18, 
+    },
+
+    {
+      "demo": "Jun",
+      "Volume": 18, 
+    },
+
+    {
+      "demo": "Jul",
+      "Volume": 45, 
+    },
+
+    {
+      "demo": "Aug",
+      "Volume": 60, 
+    },
+
+    {
+      "demo": "Sep",
+      "Volume": 49, 
+    },
+
+    {
+      "demo": "Oct",
+      "Volume": 55, 
+    },
+
+    {
+      "demo": "Nov",
+      "Volume": 88, 
+    },
+
+    {
+      "demo": "Dec",
+      "Volume": 95, 
+    },
+  ];
+
+  return (
+    <ResponsiveBar
+      data={data}
+      keys={[
+        'Volume',
+      ]}
+      indexBy="demo"
+      margin={{ top: 10, right: 30, bottom: 20, left: 30 }}
+      padding={0.3}
+      valueScale={{ type: 'linear' }}
+      indexScale={{ type: 'band', round: true }}
+      colors={{ scheme: 'nivo' }}
+      axisTop={null}
+      axisRight={null}
+      axisBottom={{
+        tickSize: 5,
+        tickPadding: 5,
+        tickRotation: 0,
+        // legend: 'Holdings',
+        legendPosition: 'middle',
+        legendOffset: 32
+      }}
+      axisLeft={{
+        tickSize: 5,
+        tickPadding: 5,
+        tickRotation: 0,
+        legendPosition: 'middle',
+        legendOffset: -40
+      }}
+      labelSkipWidth={12}
+      labelSkipHeight={12}
+      labelTextColor={{
+        from: 'color',
+        modifiers: [
+          [
+            'darker',
+            1.6
+          ]
+        ]
+      }}
+      legends={[
+       
+      ]}
+      role="application"
+      ariaLabel="Country Of Origin"
+      valueFormat={value => `${value}%`}
+    />
+  )
+}

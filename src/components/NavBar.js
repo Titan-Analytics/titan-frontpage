@@ -57,7 +57,7 @@ function NavBar() {
 
     {
       title: "Contact",
-      link: "/",
+      link: "/contact",
     },
 
   ]

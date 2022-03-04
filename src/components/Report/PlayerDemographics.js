@@ -30,78 +30,80 @@ function PlayerDemographics() {
             Player Demographics
           </Heading>
 
-          <SimpleGrid columns={[1, 1, 2]} spacingX={12} spacingY={4}>
+          <SimpleGrid columns={[1, 1, 2]} spacingX={12} spacingY={8}>
             <Box>
-              <Heading size="lg" mb={2}>
+              <Heading size="lg" >
                 Gender
               </Heading>
-
-              <Text p={2} px={3} bg='gray.100' display="inline-block" rounded="md" mx={3}>
-                {">90%"} of players are male
-              </Text>
 
               <Box height="420px" position="relative">
                 <Gender />
               </Box>
 
+              <Text p={2} px={3} bg='gray.100' display="inline-block" rounded="md" >
+                {">90%"} of players are male
+              </Text>
+
             </Box>
 
             <Box>
-              <Heading size="lg" mb={2}>
+              <Heading size="lg">
                 Age
               </Heading>
-
-              <Text p={2} px={3} bg='gray.100' display="inline-block" rounded="md" mx={3}>
-                {"~75% were born between 1986 and 2000 (between 21 and 35 years old); average age is 30."}
-              </Text>
 
               <Box height="420px" position="relative">
                 <Age />
               </Box>
 
+              <Text p={2} px={3} bg='gray.100' display="inline-block" rounded="md" >
+                {"~75% were born between 1986 and 2000 (between 21 and 35 years old); average age is 30."}
+              </Text>
+
             </Box>
 
             <Box>
-              <Heading size="lg" mb={2}>
+              <Heading size="lg" >
                 Education
               </Heading>
-
-              <Text p={2} px={3} bg='gray.100' display="inline-block" rounded="md" mx={3}>
-                {">80% have a post-secondary degree"} 
-              </Text>
 
               <Box height="420px" position="relative">
               <Education />
               </Box>
+
+                <Text p={2} px={3} bg='gray.100' display="inline-block" rounded="md" >
+                {">80% have a post-secondary degree"} 
+              </Text>
             </Box>
           
             <Box>
-              <Heading size="lg" mb={2}>
+              <Heading size="lg" >
                 Country of Origin
               </Heading>
-
-              <Text p={2} px={3} bg='gray.100' rounded="md" mx={3}>
-                {"~60%"} of respondents are from South East Asia (Philippines, Korea, Vietnam, China, Indonesia, Thailand)
-              </Text>
 
               <Box height="420px" position="relative">
                 <CountryOfOrigin />
               </Box>
+
+              <Text p={2} px={3} bg='gray.100' display="inline-block" rounded="md">
+                {"~60%"} of respondents are from South East Asia.
+              </Text>
             </Box>
 
             <Box>
-              <Heading size="lg" mb={2}>
+              <Heading size="lg" >
                 Crypto Holdings
               </Heading>
 
 
-              <Text p={2} px={3} bg='gray.100' rounded="md" mx={3}>
-                {"~70% of respondents hold <$10,000 in crypto assets"}
-              </Text>
+            
 
               <Box height="420px" position="relative">
                 <CryptoHoldings />
               </Box>
+
+              <Text p={2} px={3} bg='gray.100' rounded="md" mx={3}>
+                {"~70% of respondents hold <$10,000 in crypto assets"}
+              </Text>
 
             </Box>
 
@@ -136,7 +138,7 @@ const Gender = () => {
         'Female',
       ]}
       indexBy="demo"
-      margin={{ top: 30, right: 130, bottom: 50, left: 60 }}
+      margin={{ top: 30, right: 165, bottom: 50, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -226,7 +228,7 @@ const Age = () => {
         '>=2000',
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 30, right: 130, bottom: 50, left: 60 }}
+      margin={{ top: 30, right: 165, bottom: 50, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -299,8 +301,8 @@ const Education = () => {
       "demo": "Education",
       'Graduate Degree': 10.3,
       'Associates Degree': 10.3,
-      'Technical or Occupational Certificate': 12.1,
-      'High School or Equivalent': 22.7,
+      'Occupational Certificate': 12.1,
+      'High School or GED': 22.7,
       'Bachelors Degree': 44.6,
     },
   ];
@@ -310,12 +312,12 @@ const Education = () => {
       keys={[
         'Graduate Degree',
       'Associates Degree',
-      'Technical or Occupational Certificate',
-      'High School or Equivalent',
+      'Occupational Certificate',
+      'High School or GED',
       'Bachelors Degree',
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 30, right: 130, bottom: 50, left: 60 }}
+      margin={{ top: 30, right: 165, bottom: 50, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -410,7 +412,7 @@ const CountryOfOrigin = () => {
         'Indonesia',
       ]}
       indexBy="demo"
-      margin={{ top: 30, right: 130, bottom: 50, left: 60 }}
+      margin={{ top: 30, right: 165, bottom: 50, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -498,7 +500,7 @@ const CryptoHoldings = () => {
         '>$30k',
       ]}
       indexBy="demo"
-      margin={{ top: 30, right: 130, bottom: 50, left: 60 }}
+      margin={{ top: 30, right: 165, bottom: 50, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}

@@ -19,7 +19,7 @@ function ExecutiveSummary() {
 
   return (
     <Box >
-      <ChakraImage width="100%" src="/exec-summary.jpeg" objectFit={"cover"} height="400px" alt="Full Report" rounded="sm" loading="lazy" />
+      <ChakraImage width="100%" src="/cont.jpeg" objectFit={"cover"} height="400px" alt="Full Report" rounded="sm" loading="lazy" />
 
       <Container maxWidth={950} py={12}>
         <Fade bottom>
@@ -42,15 +42,18 @@ function ExecutiveSummary() {
             <Box>
 
             <Heading size="sm" color="gray.700" textAlign="center">
-              Search volume: "Play to earn"
+              Relative Search Volume: {"“"}Play to Earn{"”"}
             </Heading>
-            <Box height="260px"rounded="sm" mb={14}>
-
-            <SearchVolume ></SearchVolume>
+            <Box height="260px"rounded="sm" mb={2}>
+              <SearchVolume />
 
             </Box>
 
-            <ChakraImage width="100%" src="/mac.jpeg" objectFit={"cover"} height="220px" alt="Activision Blizzard Microsoft" rounded="sm" loading="lazy" />
+            <Text fontSize="sm" color="gray.600" mb={10}>
+              Source: Google Trends
+            </Text>
+
+            <ChakraImage width="100%" src="/micro-act.jpeg" objectFit={"contain"} height="220px" alt="Activision Blizzard Microsoft" rounded="sm" loading="lazy" />
 
             </Box>
 
@@ -171,7 +174,7 @@ const SearchVolume = () => {
        
       ]}
       role="application"
-      ariaLabel="Country Of Origin"
+      ariaLabel="Search Volume"
       valueFormat={value => `${value}%`}
     />
   )

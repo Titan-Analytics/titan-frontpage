@@ -33,8 +33,8 @@ function FullReport() {
               PROFILE AND PREFERENCES OF BLOCKCHAIN GAMERS
             </Heading>
 
-            <Heading mb={4}>
-              A BEHAVIOR ANALYSIS
+            <Heading mb={4} fontWeight={400}>
+              A <b>BEHAVIOR</b> ANALYSIS
             </Heading>
 
            

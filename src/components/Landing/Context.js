@@ -80,7 +80,7 @@ function Context() {
 
             <SimpleGrid columns={[1, 1, 2]} spacing={8} mb={10}>
               <Box>
-                <ChakraImage src="/display.png" width="100%" alt="Display" height={[300, 300, 320]} rounded="sm" objectFit="cover" />
+                <ChakraImage src="/display.jpeg" width="100%" alt="Display" height={[300, 300, 320]} rounded="sm" objectFit="cover" />
               </Box>
               <Box fontSize="xl" textAlign={["center", "center", "right"]}>
                 <Box>

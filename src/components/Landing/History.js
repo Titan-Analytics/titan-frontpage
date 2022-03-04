@@ -78,6 +78,7 @@ function History() {
 
       <Suspense fallback={<div>Loading...</div>}>
         <Box bg="black">
+        
 
           <Container maxWidth={1080} py={20} >
             <Fade bottom>
@@ -130,7 +131,7 @@ function History() {
 
                   <HStack>
                     <Button colorScheme="green" as={ Link } to="/report">
-                      READ MORE
+                    FULL REPORT
                     </Button>
 
                   </HStack>
@@ -150,13 +151,10 @@ function History() {
 
 
                   <HStack>
-                    <Button colorScheme="yellow">
-                      LATEST UPDATES
-                    </Button>
 
-                    <Button colorScheme="blue" as={Link} to="/contact">
+                    {/* <Button colorScheme="blue" as={Link} to="/contact">
                       GET IN TOUCH
-                    </Button>
+                    </Button> */}
                   </HStack>
                 </Box>
 

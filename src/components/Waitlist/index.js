@@ -24,34 +24,34 @@ function Waitlist () {
     <Center height="100%">
     <Fade>
 
-      <Box mb={4} width={["100%", 400, 440]} margin="0 auto">
+      <Box mb={4}  margin="0 auto" mx={5}>
       <Heading mb={1} as="h1" color="white" size="xl" mb={4}>Join the waitlist!</Heading>
-      <Box rounded="lg" borderWidth={2} p={5} bg="white">
+      <Box rounded="lg" width={["100%", "100%", 440]} borderWidth={2} p={5} bg="white">
 
-      <FormControl mb={2}>
+      <FormControl mb={[1, 1, 2]}>
         <FormLabel htmlFor="email">Name</FormLabel>
           <Input type="text" placeholder="Full name" />
       </FormControl>
 
 
-      <FormControl mb={2}>
+      <FormControl mb={[1, 1, 2]}>
         <FormLabel htmlFor="email">Email</FormLabel>
           <Input type="email" placeholder="example@email.com" />
       </FormControl>
 
-      <FormControl mb={2}>
+      <FormControl mb={[1, 1, 2]}>
         <FormLabel htmlFor="email">Organization</FormLabel>
           <Input type="text" placeholder="Organization" />
       </FormControl>
 
 
-      <FormControl mb={2}>
+      <FormControl mb={[1, 1, 2]}>
         <FormLabel htmlFor="email">Tell us anything you would like us to know</FormLabel>
           <Textarea type="text" placeholder="Message here" />
       </FormControl>
 
 
-      <HStack mt={5}>
+      <HStack mt={[2, 2, 3]}>
         <Button colorScheme="green">
           SUBMIT
         </Button>

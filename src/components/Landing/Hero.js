@@ -26,8 +26,8 @@ function Hero() {
         </h2>
       </Box>
         <Box mb={4} className="container text-white" >
-          <Heading mb={1} as="h1" size="xl">Personalized Performance Management</Heading>
-          <Heading as="h1" size="xl">Built for the Metaverse</Heading>
+          <Heading mb={1} as="h1" size="xl">Player Performance Optimization</Heading>
+          <Heading as="h1" size="xl">Built for Blockchain Gaming</Heading>
         </Box>
         <Box className="mt-sm" maxWidth={800}>
           <h2 className="font-normal leading-normal mt-0 mb-2 text-white">
@@ -40,9 +40,9 @@ function Hero() {
           EARLY ACCESS
         </Button>
 
-        <Button  colorScheme="blue" as={Link} to="/contact">
+        {/* <Button  colorScheme="blue" as={Link} to="/contact">
           GET IN TOUCH
-        </Button>
+        </Button> */}
       </HStack>
 
       </Fade>

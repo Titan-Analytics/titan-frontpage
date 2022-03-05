@@ -113,14 +113,17 @@ function GamePreference() {
             </ListItem>
           </UnorderedList>
 
-          <Text p={2} px={3} mb={5} bg='gray.100' rounded="md" >
-            Almost half of the population indicates that having fun and making money are equally important. However there is a tendency for players who spend less time playing P2E games, to place a greater emphasis on playing for fun.
-          </Text>
+       
 
 
           <Box height="390px" position="relative" mb={2}>
             <FocusOnMoney />
           </Box>
+
+          <Text p={2} px={3} mb={8} bg='gray.100' rounded="md" >
+            Almost half of the population indicates that having fun and making money are equally important. However there is a tendency for players who spend less time playing P2E games, to place a greater emphasis on playing for fun.
+          </Text>
+
 
           <UnorderedList mb={4} pl={5} spacing={2}>
             <ListItem>
@@ -129,14 +132,16 @@ function GamePreference() {
 
           </UnorderedList>
 
+        
+
+
+          <Box height="390px" position="relative" mb={2}>
+            <PreferTeam />
+          </Box>
+
           <Text p={2} px={3} mb={8} bg='gray.100' rounded="md" >
             Slightly more than half of the population prefer to play as part of a team. However, this preference is stronger for those who spend more time playing games each week.
           </Text>
-
-
-          <Box height="390px" position="relative" mb={8}>
-            <PreferTeam />
-          </Box>
 
 
           <SimpleGrid columns={[1, 1, 2]} spacing={6} mb={5}>

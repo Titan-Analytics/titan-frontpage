@@ -130,7 +130,7 @@ function History() {
 
                   <HStack>
                     <Button colorScheme="green" as={ Link } to="/report">
-                    FULL REPORT
+                      RESEARCH
                     </Button>
 
                   </HStack>

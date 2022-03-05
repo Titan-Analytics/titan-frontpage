@@ -19,7 +19,6 @@ function ClosingStatement() {
 
   return (
     <Box >
-      <ChakraImage width="100%" src="/exec-summary.jpeg" objectFit={"cover"} height="400px" alt="Full Report" rounded="sm" />
 
       <Container maxWidth={950} py={12}>
         <Fade>

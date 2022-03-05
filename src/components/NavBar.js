@@ -13,8 +13,7 @@ function NavBar() {
     justify-content: space-between;
     padding-top: 1.15rem;
     padding-bottom: 1.15rem;
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
+    
   `;
   const NavOptions = styled.div`
     display: flex;
@@ -65,6 +64,7 @@ function NavBar() {
   return (
 
     <Box position="fixed" top={0} width="100vw" left={0} bg="#1e0441c7" backdropFilter={"blur(8px)"} zIndex={1000}>
+    <Box px={[5, 5, 8]}>
       <Nav>
         <Link to="/" className="flex items-center flex-shrink-0 text-white mr-6">
         
@@ -90,7 +90,7 @@ function NavBar() {
           </span>
           
         </Link>
-        <HStack gap={8}>
+        <HStack gap={[4, 5, 8]}>
           {
             links.map( (el, idx ) => {
               return <ChakraLink rounded="sm" as={Link} color="white" fontSize="lg" to={ el.link } key={"link" + idx}>
@@ -101,6 +101,7 @@ function NavBar() {
          
         </HStack>
       </Nav>
+      </Box>
     </Box>
   );
 }

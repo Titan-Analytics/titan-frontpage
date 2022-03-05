@@ -18,7 +18,7 @@ function Footer() {
 
   return (
     <>
-      <Box as="footer" bg="#1e0441" p={5} px={10} display="flex" justifyContent={"space-between"}>
+      <Box as="footer" bg="#1e0441" p={5} px={[5, 5, 8]} display="flex" justifyContent={"space-between"}>
         {/* <Modal onClose={() => setShowModal(false)} show={showModal}></Modal> */}
 
 

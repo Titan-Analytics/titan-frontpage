@@ -22,7 +22,7 @@ function ClosingStatement() {
       <ChakraImage width="100%" src="/exec-summary.jpeg" objectFit={"cover"} height="400px" alt="Full Report" rounded="sm" />
 
       <Container maxWidth={950} py={12}>
-        <Fade bottom>
+        <Fade>
           <Heading textTransform={"uppercase"} mb={4}>
             Closing Statement
           </Heading>

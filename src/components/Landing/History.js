@@ -81,7 +81,7 @@ function History() {
         
 
           <Container maxWidth={1080} py={20} >
-            <Fade bottom>
+            <Fade>
               <Heading color="white" mb={5}>
                 Our History
               </Heading>
@@ -99,7 +99,7 @@ function History() {
 
                 <Box>
                   <iframe
-                    width="560"
+                    width="100%"
                     height="315"
                     src="https://www.youtube.com/embed/v6S2S0Pekgg"
                     title="YouTube video player"
@@ -112,12 +112,11 @@ function History() {
               </SimpleGrid>
 
             </Fade>
-            <Fade bottom>
+            <Fade>
 
               <Grid templateColumns={["repeat(100%)", "repeat(100%)", "200px calc(100% - 200px)"]} mb={20}>
-                <Box>
-                    <ChakraImage objectPosition={"15% 50%"} src="/cont.jpeg" rounded="sm" loading="lazy" height="100%" objectFit="cover" />
-
+                <Box mb={[5]}>
+                    <ChakraImage objectPosition={"15% 50%"} width={300} height={200} src="/cont.jpeg" rounded="sm" loading="lazy"  objectFit="cover" />
                 </Box>
 
                 <Box pl={[0, 0, 10]}>
@@ -140,7 +139,7 @@ function History() {
             </Fade>
 
 
-            <Fade bottom>
+            <Fade>
 
               <SimpleGrid columns={[1, 1, 2]} spacing={8} mb={10}>
                 <Box>

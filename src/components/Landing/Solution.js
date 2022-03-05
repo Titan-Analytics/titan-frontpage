@@ -51,7 +51,7 @@ function Solution() {
       <Suspense fallback={<div>Loading...</div>}>
         <Section>
           <RightContainer>
-            <Fade bottom>
+            <Fade>
               <div className="text-4xl lg:text-4xl md:text-5xl sm:text-4xl font-bold leading-normal text-white">
                 <h1 id="context" className="text-right pr-3">
                   Problem and Solution

@@ -25,7 +25,7 @@ function PlayerDemographics() {
       <ChakraImage width="100%" src="/matrix.jpeg" objectFit={"cover"} height="400px" alt="Player Demographics" loading="lazy" rounded="sm" />
 
       <Container maxWidth={950} py={12}>
-        <Fade bottom>
+        <Fade>
           <Heading textTransform={"uppercase"} mb={4}>
             Player Demographics
           </Heading>
@@ -412,7 +412,7 @@ const CountryOfOrigin = () => {
         'Indonesia',
       ]}
       indexBy="demo"
-      margin={{ top: 30, right: 165, bottom: 50, left: 60 }}
+      margin={{ top: 30, right: 160, bottom: 50, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}

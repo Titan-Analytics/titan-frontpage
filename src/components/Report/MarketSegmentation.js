@@ -22,10 +22,10 @@ function ClosingStatement() {
 
   return (
     <Box >
-      <ChakraImage width="100%" src="/exec-summary.jpeg" objectFit={"cover"} height="400px" alt="Full Report" rounded="sm" />
+      <ChakraImage width="100%" src="/segmentation.jpeg" objectFit={"cover"} height="400px" alt="Full Report" rounded="sm" loading="lazy" />
 
       <Container maxWidth={950} py={12}>
-        <Fade bottom>
+        <Fade>
           <Heading textTransform={"uppercase"} mb={4}>
             Market Segmentation
           </Heading>
@@ -41,7 +41,7 @@ function ClosingStatement() {
               <Grid templateColumns={["repeat(100%)", "repeat(100%)", "50% 45%"]} gap="5%" >
                 <Box>
                   <Heading size="lg">
-                    Experience Grinders
+                    Experienced Grinders
                   </Heading>
 
                   <Heading size="sm"  fontWeight={400}>
@@ -71,7 +71,7 @@ function ClosingStatement() {
                   </UnorderedList>
                 </Box>
 
-                <Box>
+                <Box mb={5}>
                   <ChakraImage width="100%" src="/exp-gri.jpeg" objectFit={"cover"} minHeight="220px" height="100%" alt="Experience Grinders" rounded="sm" loading="lazy" /> 
                 </Box>
               </Grid>
@@ -109,8 +109,8 @@ function ClosingStatement() {
                   </UnorderedList>
                 </Box>
 
-                <Box>
-                  <ChakraImage width="100%" src="/casual.jpeg" objectFit={"cover"} minHeight="220px" height="100%" alt="Casual" rounded="sm" loading="lazy" /> 
+                <Box mb={5} >
+                  <ChakraImage width="100%" src="/casual.jpeg" objectFit={"cover"} minHeight="220px" height="100%" alt="Casual" rounded="sm" loading="lazy" mb={5}  /> 
                 </Box>
               </Grid>
             </ListItem>
@@ -148,7 +148,7 @@ function ClosingStatement() {
                 </Box>
 
                 <Box>
-                  <ChakraImage width="100%" src="/earn-opt.jpeg" objectFit={"cover"} minHeight="220px" height="100%" alt="Earning Optimizers" rounded="sm" loading="lazy" /> 
+                  <ChakraImage mb={5} width="100%" src="/earn-opt.jpeg" objectFit={"cover"} minHeight="220px" height="100%" alt="Earning Optimizers" rounded="sm" loading="lazy" /> 
                 </Box>
               </Grid>
             </ListItem>

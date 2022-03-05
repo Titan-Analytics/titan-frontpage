@@ -19,15 +19,15 @@ function ExecutiveSummary() {
 
   return (
     <Box >
-      <ChakraImage width="100%" src="/cont.jpeg" objectFit={"cover"} height="400px" alt="Full Report" rounded="sm" loading="lazy" />
+      <ChakraImage width="100%" src="/cont.jpeg" objectFit={"cover"} objectPosition={"20% 50%"} height="400px" alt="Full Report" rounded="sm" loading="lazy" />
 
       <Container maxWidth={950} py={12}>
-        <Fade bottom>
+        <Fade>
             <Heading mb={4}>
               CONTEXT & PURPOSE
             </Heading>
 
-            <Grid templateColumns={["repeat(100%)", "repeat(100%)", "50% 45%"]} gap="5%" mb={10}>
+            <Grid templateColumns={["repeat(100%)", "repeat(100%)", "50% 45%"]} gap={[0, 0,  "5%"]} mb={10}>
             <Box>
 
             <Text mb={4}>
@@ -44,9 +44,8 @@ function ExecutiveSummary() {
             <Heading size="sm" color="gray.700" textAlign="center">
               Relative Search Volume: {"“"}Play to Earn{"”"}
             </Heading>
-            <Box height="260px"rounded="sm" mb={2}>
+            <Box height={[200, 210, "260px"]} width={["100%"]}  rounded="sm"  mb={2}>
               <SearchVolume />
-
             </Box>
 
             <Text fontSize="sm" color="gray.600" mb={10}>

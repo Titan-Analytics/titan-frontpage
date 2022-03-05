@@ -22,10 +22,10 @@ function Conclusion() {
 
   return (
     <Box >
-      <ChakraImage width="100%" src="/exec-summary.jpeg" objectFit={"cover"} height="400px" alt="Full Report" loading="lazy" rounded="sm" />
+      <ChakraImage width="100%" src="/cont.jpeg" objectFit={"cover"} objectPosition="10% 50%" height="400px" alt="Conclusion" loading="lazy" rounded="sm" />
 
       <Container maxWidth={950} py={12}>
-        <Fade bottom>
+        <Fade>
           <Heading textTransform={"uppercase"} mb={4}>
             Conclusion
           </Heading>
@@ -48,7 +48,7 @@ function Conclusion() {
                 </Box>
 
                 <Box>
-                  <ChakraImage width="100%" src="/handsome-gamer.png" objectFit={"cover"} minHeight="220px" height="100%" alt="Handsome Gamer" loading="lazy" rounded="sm" />
+                  <ChakraImage width="100%" src="/handsome-gamer.jpeg" objectFit={"cover"} minHeight="220px" height="100%" alt="Handsome Gamer" loading="lazy" rounded="sm" />
                 </Box>
               </Grid>
             </ListItem>

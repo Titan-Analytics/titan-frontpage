@@ -52,9 +52,9 @@ function Context() {
     <>
       <Suspense fallback={<div>Loading...</div>}>
         <Container maxWidth={1080} py={20} >
-          <Fade bottom>
+          <Fade>
 
-            <Heading textAlign={["center", "center", "left"]} mb={5}>
+            <Heading textAlign={["left", "left", "left"]} mb={5}>
               Context
             </Heading>
 
@@ -72,9 +72,9 @@ function Context() {
           </Fade>
 
 
-          <Fade bottom>
+          <Fade>
 
-            <Heading textAlign={["center", "center", "right"]} mb={5}>
+            <Heading textAlign={["left", "left", "right"]} mb={5}>
               Problem & Solution
             </Heading>
 
@@ -82,7 +82,7 @@ function Context() {
               <Box>
                 <ChakraImage src="/display.jpeg" width="100%" alt="Display" height={[300, 300, 320]} rounded="sm" objectFit="cover" />
               </Box>
-              <Box fontSize="xl" textAlign={["center", "center", "right"]}>
+              <Box fontSize="xl" >
                 <Box>
 
                   <Text mb={4}>
@@ -104,7 +104,7 @@ function Context() {
       {/* <Suspense fallback={<div>Loading...</div>}>
         <Section>
           <TextContainer>
-            <Fade bottom>
+            <Fade>
               <div className="text-4xl lg:text-4xl md:text-5xl sm:text-4xl font-bold leading-normal text-white">
                 <h1 id="context">Context</h1>
               </div>

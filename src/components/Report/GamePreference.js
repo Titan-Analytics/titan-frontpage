@@ -35,14 +35,13 @@ function GamePreference() {
             </ListItem>
           </UnorderedList>
 
-          <SimpleGrid columns={[1, 2, 3]} spacing={6} mb={8}>
+          <SimpleGrid columns={[1, 1, 2]} spacing={8} mb={8}>
             <Box>
-
-              <Heading fontSize="xl" mb={1}>
+              <Heading fontSize="2xl" mb={1}>
                 Gaming Experience
               </Heading>
 
-              <Box height="390px" position="relative">
+              <Box height="380px" position="relative">
                 <YearsPlayed />
               </Box>
 
@@ -53,11 +52,11 @@ function GamePreference() {
 
             <Box>
 
-              <Heading fontSize="xl" mb={1}>
+              <Heading fontSize="2xl" mb={1}>
                 Intensity of Playing Time
               </Heading>
 
-              <Box height="390px" position="relative">
+              <Box height="380px" position="relative">
                 <HoursPerWeek />
               </Box>
 
@@ -68,10 +67,10 @@ function GamePreference() {
 
             <Box>
 
-              <Heading fontSize="xl" mb={1}>
+              <Heading fontSize="2xl" mb={1}>
                 Focus on P2E games
               </Heading>
-              <Box height="390px" position="relative">
+              <Box height="380px" position="relative">
                 <FullTime />
               </Box>
 
@@ -88,14 +87,14 @@ function GamePreference() {
           </UnorderedList>
 
 
-          <SimpleGrid columns={[1, 2, 3]} spacing={6} mb={8}>
+          <SimpleGrid columns={[1, 1, 2]} spacing={8} mb={8}>
             <Box>
 
-              <Heading fontSize="xl" mb={1}>
+              <Heading fontSize="2xl" mb={1}>
                 Size of Gaming Library
               </Heading>
 
-              <Box height="390px" position="relative" >
+              <Box height="380px" position="relative" >
                 <LargeNumberGames />
               </Box>
 
@@ -108,10 +107,10 @@ function GamePreference() {
             <Box>
 
 
-              <Heading fontSize="xl" mb={1}>
+              <Heading fontSize="2xl" mb={1}>
                 Turnover of Gaming Library
               </Heading>
-              <Box height="390px" position="relative">
+              <Box height="380px" position="relative">
                 <PlayFrequently />
               </Box>
 
@@ -123,11 +122,11 @@ function GamePreference() {
             <Box>
 
 
-              <Heading fontSize="xl" mb={1}>
+              <Heading fontSize="2xl" mb={1}>
                 Game Title Dominance
               </Heading>
 
-              <Box height="390px" position="relative">
+              <Box height="380px" position="relative">
                 <WhichGame />
               </Box>
 
@@ -318,7 +317,7 @@ const YearsPlayed = () => {
         '>5 Years',
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 15, right: 150, bottom: 40, left: 60 }}
+      margin={{ top: 15, right: 190, bottom: 40, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -402,7 +401,7 @@ const HoursPerWeek = () => {
         "<=10 Hours",
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 15, right: 150, bottom: 40, left: 60 }}
+      margin={{ top: 15, right: 190, bottom: 40, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -485,7 +484,7 @@ const FullTime = () => {
         "Full Time",
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 15, right: 150, bottom: 40, left: 60 }}
+      margin={{ top: 15, right: 190, bottom: 40, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -569,7 +568,7 @@ const LargeNumberGames = () => {
         "Strongly Agree / Agree",
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 15, right: 150, bottom: 40, left: 60 }}
+      margin={{ top: 15, right: 190, bottom: 40, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -653,7 +652,7 @@ const PlayFrequently = () => {
         "Strongly Agree / Agree",
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 15, right: 150, bottom: 40, left: 60 }}
+      margin={{ top: 15, right: 190, bottom: 40, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -745,7 +744,7 @@ const WhichGame = () => {
         "Axie Infinity",
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 15, right: 130, bottom: 40, left: 60 }}
+      margin={{ top: 15, right: 190, bottom: 40, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}

@@ -24,7 +24,7 @@ function Waitlist () {
     <Center height="100%">
     <Fade>
 
-      <Box mb={4}  margin="0 auto" mx={5}>
+      <Box mb={4} margin="0 auto"  mt={4} mx={5}>
       <Heading mb={1} as="h1" color="white" size="xl" mb={4}>Join the waitlist!</Heading>
       <Box rounded="lg" width={["100%", "100%", 440]} borderWidth={2} p={5} bg="white">
 

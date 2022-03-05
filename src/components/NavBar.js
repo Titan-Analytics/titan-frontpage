@@ -64,7 +64,7 @@ function NavBar() {
   return (
 
     <Box position="fixed" top={0} width="100vw" left={0} bg="#1e0441c7" backdropFilter={"blur(8px)"} zIndex={1000}>
-    <Box px={[5, 5, 8]}>
+    <Box px={[4, 4, 7]}>
       <Nav>
         <Link to="/" className="flex items-center flex-shrink-0 text-white mr-6">
         
@@ -93,7 +93,7 @@ function NavBar() {
         <HStack gap={[4, 5, 8]}>
           {
             links.map( (el, idx ) => {
-              return <ChakraLink rounded="sm" as={Link} color="white" fontSize="lg" to={ el.link } key={"link" + idx}>
+              return <ChakraLink rounded="sm" as={Link} color="white" fontSize="lg" px={1} to={ el.link } key={"link" + idx}>
                 {el.title}
               </ChakraLink>
             })

@@ -52,7 +52,7 @@ function ExecutiveSummary() {
               Source: Google Trends
             </Text>
 
-            <ChakraImage width="100%" src="/micro-act.jpeg" objectFit={"contain"} height="220px" alt="Activision Blizzard Microsoft" rounded="sm" loading="lazy" />
+            <ChakraImage width="100%" src="/micro-act.jpeg" objectFit={"cover"} height="220px" alt="Activision Blizzard Microsoft" rounded="sm" loading="lazy" />
 
             </Box>
 

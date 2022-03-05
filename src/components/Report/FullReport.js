@@ -19,7 +19,7 @@ function FullReport() {
 
   return (
     <Box >
-      <ChakraImage width="100%" src="/cover.jpeg" objectFit={"cover"} height="420px" alt="Full Report" rounded="sm" />
+      <ChakraImage width="100%" src="/cover.jpeg" objectFit={"cover"} height={[320, 400, "440px"]} alt="Full Report" rounded="sm" />
 
 
       <Container maxWidth={950} py={12}>

@@ -40,11 +40,11 @@ function ClosingStatement() {
             <ListItem pl={2} ml={2} mb={8}>
               <Grid templateColumns={["repeat(100%)", "repeat(100%)", "50% 45%"]} gap="5%" >
                 <Box>
-                  <Heading size="lg">
+                  <Heading fontSize="2xl">
                     Experienced Grinders
                   </Heading>
 
-                  <Heading size="sm"  fontWeight={400}>
+                  <Heading size="sm" mb={2} fontWeight={400}>
                     17% OF THE POPULATION
                   </Heading>
 
@@ -81,11 +81,11 @@ function ClosingStatement() {
             <ListItem pl={2} ml={2} mb={8}>
               <Grid templateColumns={["repeat(100%)", "repeat(100%)", "50% 45%"]} gap="5%" >
                 <Box>
-                  <Heading size="lg">
+                  <Heading fontSize="2xl">
                     Casual Gamers
                   </Heading>
 
-                  <Heading size="sm"  fontWeight={400}>
+                  <Heading size="sm"   mb={2}  fontWeight={400}>
                     38% OF THE POPULATION
                   </Heading>
 
@@ -119,11 +119,11 @@ function ClosingStatement() {
             <ListItem pl={2} ml={2} mb={8}>
               <Grid templateColumns={["repeat(100%)", "repeat(100%)", "50% 45%"]} gap="5%" >
                 <Box>
-                  <Heading size="lg">
+                  <Heading fontSize="2xl">
                     Earnings Optimizers
                   </Heading>
 
-                  <Heading size="sm"  fontWeight={400}>
+                  <Heading size="sm"  mb={2}  fontWeight={400}>
                     45% OF THE POPULATION
                   </Heading>
 

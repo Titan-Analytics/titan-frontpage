@@ -4,8 +4,16 @@ import {
 
 import Header from "./NavBar";
 import Footer from "./Footer";
+import { useEffect } from "react";
 
 function Layout({ children }) {
+	useEffect(() => {
+		window.scrollTo({
+			top: 0, 
+			left: 0, 
+			// behavior: "auto",
+		});
+	})
 	return <Box>
 		<Header />
 

@@ -129,7 +129,7 @@ function History() {
                   </Text>
 
                   <HStack>
-                    <Button colorScheme="green" as={ Link } to="/report">
+                    <Button colorScheme="green" as={ Link } to="/research">
                       RESEARCH
                     </Button>
 

@@ -13,19 +13,12 @@ const TransparencyContainer = styled.div`
 function Home() {
   return (
     <>
-
-
-
       <Layout>
-
         <div className="anim">
           <AnimationCanvas />
         </div>
-
+        
         <Hero />
-
-
-
 
         <Context />
         <History />

@@ -13,7 +13,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="waitlist" element={<Waitlist />} />
-            <Route path="report" element={<Report />} />
+            <Route path="research" element={<Report />} />
             <Route path="contact" element={<Contact />} />
           </Routes>
         </BrowserRouter>

@@ -45,8 +45,8 @@ function NavBar() {
 
 
     {
-      title: "Report",
-      link: "/report",
+      title: "Research",
+      link: "/research",
     },
 
     {

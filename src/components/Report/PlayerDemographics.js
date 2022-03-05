@@ -32,7 +32,7 @@ function PlayerDemographics() {
 
           <SimpleGrid columns={[1, 1, 2]} spacingX={12} spacingY={8}>
             <Box>
-              <Heading size="lg" >
+              <Heading fontSize="2xl" >
                 Gender
               </Heading>
 
@@ -47,7 +47,7 @@ function PlayerDemographics() {
             </Box>
 
             <Box>
-              <Heading size="lg">
+              <Heading fontSize="2xl" >
                 Age
               </Heading>
 
@@ -62,7 +62,7 @@ function PlayerDemographics() {
             </Box>
 
             <Box>
-              <Heading size="lg" >
+              <Heading fontSize="2xl" >
                 Education
               </Heading>
 
@@ -76,7 +76,7 @@ function PlayerDemographics() {
             </Box>
           
             <Box>
-              <Heading size="lg" >
+              <Heading fontSize="2xl" >
                 Country of Origin
               </Heading>
 
@@ -90,7 +90,7 @@ function PlayerDemographics() {
             </Box>
 
             <Box>
-              <Heading size="lg" >
+              <Heading fontSize="2xl" >
                 Crypto Holdings
               </Heading>
 

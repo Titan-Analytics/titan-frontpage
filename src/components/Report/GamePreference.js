@@ -29,7 +29,7 @@ function GamePreference() {
             Game Preference & Duration
           </Heading>
 
-          <UnorderedList mb={2} pl={5} spacing={2}>
+          <UnorderedList mb={6} pl={5} spacing={2}>
             <ListItem>
               P2E gamers are seasoned players. They invest a significant amount of time into gameplay each week, and are highly focused on P2E titles.
             </ListItem>
@@ -37,6 +37,11 @@ function GamePreference() {
 
           <SimpleGrid columns={[1, 2, 3]} spacing={6} mb={8}>
             <Box>
+
+              <Heading fontSize="xl" mb={1}>
+                Gaming Experience
+              </Heading>
+
               <Box height="390px" position="relative">
                 <YearsPlayed />
               </Box>
@@ -47,6 +52,11 @@ function GamePreference() {
             </Box>
 
             <Box>
+
+              <Heading fontSize="xl" mb={1}>
+                Intensity of Playing Time
+              </Heading>
+
               <Box height="390px" position="relative">
                 <HoursPerWeek />
               </Box>
@@ -57,6 +67,10 @@ function GamePreference() {
             </Box>
 
             <Box>
+
+              <Heading fontSize="xl" mb={1}>
+                Focus on P2E games
+              </Heading>
               <Box height="390px" position="relative">
                 <FullTime />
               </Box>
@@ -67,7 +81,7 @@ function GamePreference() {
             </Box>
           </SimpleGrid>
 
-          <UnorderedList mb={2} pl={5} spacing={2}>
+          <UnorderedList mb={6} pl={5} spacing={2}>
             <ListItem>
               There is a high bar for attention capture among P2E gamers.
             </ListItem>
@@ -76,6 +90,11 @@ function GamePreference() {
 
           <SimpleGrid columns={[1, 2, 3]} spacing={6} mb={8}>
             <Box>
+
+              <Heading fontSize="xl" mb={1}>
+                Size of Gaming Library
+              </Heading>
+
               <Box height="390px" position="relative" >
                 <LargeNumberGames />
               </Box>
@@ -87,6 +106,11 @@ function GamePreference() {
 
 
             <Box>
+
+
+              <Heading fontSize="xl" mb={1}>
+                Turnover of Gaming Library
+              </Heading>
               <Box height="390px" position="relative">
                 <PlayFrequently />
               </Box>
@@ -97,6 +121,12 @@ function GamePreference() {
             </Box>
 
             <Box>
+
+
+              <Heading fontSize="xl" mb={1}>
+                Game Title Dominance
+              </Heading>
+
               <Box height="390px" position="relative">
                 <WhichGame />
               </Box>
@@ -107,13 +137,20 @@ function GamePreference() {
             </Box>
           </SimpleGrid>
 
-          <UnorderedList mb={4} pl={5} spacing={2}>
+          <UnorderedList mb={6} pl={5} spacing={2}>
             <ListItem>
               Gamers are clearly divided on the relative importance of playing for fun vs. playing for money.
             </ListItem>
           </UnorderedList>
 
-       
+
+
+
+
+
+          <Heading fontSize="2xl" mb={1}>
+            Playing for Fun vs. Playing for Money
+          </Heading>
 
 
           <Box height="390px" position="relative" mb={2}>
@@ -125,15 +162,20 @@ function GamePreference() {
           </Text>
 
 
-          <UnorderedList mb={4} pl={5} spacing={2}>
+          <UnorderedList mb={6} pl={5} spacing={2}>
             <ListItem>
               On average, P2E gamers tend to prefer playing as part of a team vs playing alone.
             </ListItem>
 
           </UnorderedList>
 
-        
 
+
+
+
+          <Heading fontSize="2xl" mb={1}>
+            Teaming Tendency
+          </Heading>
 
           <Box height="390px" position="relative" mb={2}>
             <PreferTeam />
@@ -148,7 +190,11 @@ function GamePreference() {
 
             <Box>
 
-            
+
+            <Heading fontSize="2xl" mb={1}>
+            Gaming Hardware
+          </Heading>
+
               <Box height="390px" position="relative">
                 <GameConsole />
               </Box>
@@ -171,7 +217,12 @@ function GamePreference() {
 
 
             <Box>
-            
+
+
+
+            <Heading fontSize="2xl" mb={1}>
+            Gaming Genre
+          </Heading>
 
               <Box height="390px" position="relative">
                 <GameType />
@@ -184,6 +235,11 @@ function GamePreference() {
 
 
             <Box>
+
+
+            <Heading fontSize="2xl" mb={1}>
+            Gaming Elements
+          </Heading>
 
               <Box height="390px" position="relative">
                 <GameChoice />
@@ -204,12 +260,17 @@ function GamePreference() {
 
 
             <Box>
-              
+
+
+            <Heading fontSize="2xl" mb={1}>
+            Money Earning Pathways
+            </Heading>        
+
               <Box height="390px" position="relative">
                 <EarningPathyways />
               </Box>
-                
-                <Text p={2} px={3} bg='gray.100' rounded="md" mb={2}>
+
+              <Text p={2} px={3} bg='gray.100' rounded="md" mb={2}>
                 {"The main pathways to earn money in P2E continues to match traditional games."}
               </Text>
 
@@ -257,7 +318,7 @@ const YearsPlayed = () => {
         '>5 Years',
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 30, right: 150, bottom: 40, left: 60 }}
+      margin={{ top: 15, right: 150, bottom: 40, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -341,7 +402,7 @@ const HoursPerWeek = () => {
         "<=10 Hours",
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 30, right: 150, bottom: 40, left: 60 }}
+      margin={{ top: 15, right: 150, bottom: 40, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -424,7 +485,7 @@ const FullTime = () => {
         "Full Time",
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 30, right: 150, bottom: 40, left: 60 }}
+      margin={{ top: 15, right: 150, bottom: 40, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -508,7 +569,7 @@ const LargeNumberGames = () => {
         "Strongly Agree / Agree",
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 30, right: 150, bottom: 40, left: 60 }}
+      margin={{ top: 15, right: 150, bottom: 40, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -592,7 +653,7 @@ const PlayFrequently = () => {
         "Strongly Agree / Agree",
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 30, right: 150, bottom: 40, left: 60 }}
+      margin={{ top: 15, right: 150, bottom: 40, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -684,7 +745,7 @@ const WhichGame = () => {
         "Axie Infinity",
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 30, right: 130, bottom: 40, left: 60 }}
+      margin={{ top: 15, right: 130, bottom: 40, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -782,7 +843,7 @@ const FocusOnMoney = () => {
         "Focused On Fun",
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 30, right: 150, bottom: 50, left: 60 }}
+      margin={{ top: 15, right: 150, bottom: 50, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -884,7 +945,7 @@ const PreferTeam = () => {
         "Strongly Prefer Playing Alone",
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 30, right: 196, bottom: 50, left: 60 }}
+      margin={{ top: 15, right: 196, bottom: 50, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -969,7 +1030,7 @@ const GameConsole = () => {
         "Mobile",
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 30, right: 144, bottom: 50, left: 60 }}
+      margin={{ top: 15, right: 144, bottom: 50, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -1058,7 +1119,7 @@ const GameType = () => {
         "MOBA",
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 30, right: 144, bottom: 50, left: 60 }}
+      margin={{ top: 15, right: 144, bottom: 50, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -1145,7 +1206,7 @@ const GameChoice = () => {
         "Aesthetics",
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 30, right: 144, bottom: 50, left: 60 }}
+      margin={{ top: 15, right: 144, bottom: 50, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
@@ -1233,7 +1294,7 @@ const EarningPathyways = () => {
         "Trading Items",
       ].reverse()}
       indexBy="demo"
-      margin={{ top: 30, right: 144, bottom: 50, left: 60 }}
+      margin={{ top: 15, right: 144, bottom: 50, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}

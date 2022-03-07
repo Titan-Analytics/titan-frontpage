@@ -22,7 +22,7 @@ function GamePreference() {
       <ChakraImage width="100%" src="/game-preference.jpeg" objectFit={"cover"} height="400px" alt="Full Report" loading="lazy" rounded="sm" />
 
 
-      <Container maxWidth={950} py={12}>
+      <Container maxWidth={1050} py={12}>
         <Fade>
 
           <Heading mb={4} textTransform="uppercase">
@@ -35,7 +35,7 @@ function GamePreference() {
             </ListItem>
           </UnorderedList>
 
-          <SimpleGrid columns={[1, 1, 2]} spacing={8} mb={8}>
+          <SimpleGrid columns={[1, 2, 2, 3]} spacing={6} mb={8}>
             <Box>
               <Heading fontSize="2xl" mb={1}>
                 Gaming Experience
@@ -87,7 +87,7 @@ function GamePreference() {
           </UnorderedList>
 
 
-          <SimpleGrid columns={[1, 1, 2]} spacing={8} mb={8}>
+          <SimpleGrid columns={[1, 2, 2, 3]} spacing={6} mb={8}>
             <Box>
 
               <Heading fontSize="2xl" mb={1}>

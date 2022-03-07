@@ -24,7 +24,7 @@ function Conclusion() {
     <Box >
       <ChakraImage width="100%" src="/cont.jpeg" objectFit={"cover"} objectPosition="10% 50%" height="400px" alt="Conclusion" loading="lazy" rounded="sm" />
 
-      <Container maxWidth={950} py={12}>
+      <Container maxWidth={1050} py={12}>
         <Fade>
           <Heading textTransform={"uppercase"} mb={4}>
             Conclusion

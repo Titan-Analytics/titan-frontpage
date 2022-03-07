@@ -21,7 +21,7 @@ function ExecutiveSummary() {
     <Box >
       <ChakraImage width="100%" src="/cont.jpeg" objectFit={"cover"} objectPosition={"20% 50%"} height="400px" alt="Full Report" rounded="sm" loading="lazy" />
 
-      <Container maxWidth={950} py={12}>
+      <Container maxWidth={1050} py={12}>
         <Fade>
             <Heading mb={4}>
               CONTEXT & PURPOSE

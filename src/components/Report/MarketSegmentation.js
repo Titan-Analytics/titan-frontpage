@@ -24,7 +24,7 @@ function ClosingStatement() {
     <Box >
       <ChakraImage width="100%" src="/segmentation.jpeg" objectFit={"cover"} height="400px" alt="Full Report" rounded="sm" loading="lazy" />
 
-      <Container maxWidth={950} py={12}>
+      <Container maxWidth={1050} py={12}>
         <Fade>
           <Heading textTransform={"uppercase"} mb={4}>
             Market Segmentation

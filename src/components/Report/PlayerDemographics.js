@@ -24,7 +24,7 @@ function PlayerDemographics() {
     <Box >
       <ChakraImage width="100%" src="/matrix.jpeg" objectFit={"cover"} height="400px" alt="Player Demographics" loading="lazy" rounded="sm" />
 
-      <Container maxWidth={950} py={12}>
+      <Container maxWidth={1050} py={12}>
         <Fade>
           <Heading textTransform={"uppercase"} mb={4}>
             Player Demographics

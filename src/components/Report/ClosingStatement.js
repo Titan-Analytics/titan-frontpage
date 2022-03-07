@@ -20,7 +20,7 @@ function ClosingStatement() {
   return (
     <Box >
 
-      <Container maxWidth={950} pb={12}>
+      <Container maxWidth={1050} pb={12}>
         <Fade>
           <Heading textTransform={"uppercase"} mb={4}>
             Closing Statement

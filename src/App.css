@@ -11,11 +11,15 @@ body {
 
 .anim {
   height: 100vh;
-  padding-top: 30vh;
   width: 100vw;
   z-index: -100;
   position: absolute;
   background-color: black;
   background: linear-gradient(#280456, #000, #000);
 
+}
+
+ol li::marker {
+  font-weight: bold;
+  font-size: 22px;
 }

@@ -7,7 +7,7 @@ import {
   useLoader,
   useThree,
 } from "react-three-fiber";
-import circleImg from "../assets/circle.png";
+import circleImg from "../../assets/circle.png";
 import { Suspense, useCallback, useMemo, useRef } from "react";
 extend({ OrbitControls });
 
@@ -112,7 +112,7 @@ export default function AnimationCanvas() {
       colorManagement={false}
       camera={{ position: [100, 10, 0], fov: 75 }}
     >
-      <Suspense fallback={null}>
+      <Suspense fallback={"Loading..."}>
         <Points />
       </Suspense>
       <CameraControls />

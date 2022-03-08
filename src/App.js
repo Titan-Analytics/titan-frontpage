@@ -1,8 +1,10 @@
 import "./App.css";
 import React, { Suspense } from "react";
-import Home from "./components/Home";
+import Home from "./pages/index";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Waitlist from "./pages/waitlist/Waitlist";
+import Waitlist from "./pages/waitlist";
+import Report from "./pages/report";
+import Contact from "./pages/contact";
 function App() {
   return (
     <div>
@@ -11,6 +13,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="waitlist" element={<Waitlist />} />
+            <Route path="research" element={<Report />} />
+            <Route path="contact" element={<Contact />} />
           </Routes>
         </BrowserRouter>
       </Suspense>

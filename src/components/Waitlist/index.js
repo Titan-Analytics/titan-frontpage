@@ -117,7 +117,16 @@ function Waitlist () {
 
 
       <HStack mt={[2, 2, 3]}>
-        <Button colorScheme="green" type="submit">
+        <Button
+            colorScheme="green"
+            type="submit"
+            isDisabled={
+              !formData.name ||
+              !formData.message ||
+              !formData.message ||
+              !formData.email ||
+              !formData.organization ||
+              !formData.category}>
           SUBMIT
         </Button>
       </HStack>

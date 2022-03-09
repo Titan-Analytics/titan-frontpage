@@ -1,6 +1,8 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
+import { Select } from '@chakra-ui/react'
+
 import {
   Box,
   Button,
@@ -19,8 +21,9 @@ function Waitlist () {
   const initialData = {
     name: '',
     email: '',
-    organisation: '',
-    about: ''
+    organization: '',
+    message: '',
+    category: ''
   }
   const [formData, setFormData] = useState(initialData)
   const [error, setError] = useState(false)
@@ -58,6 +61,7 @@ function Waitlist () {
       document.getElementsByName("email")[0].value = "";
       document.getElementsByName("organization")[0].value = "";
       document.getElementsByName("message")[0].value = "";
+      document.getElementsByName("category")[0].value = "";
 
       alert("Thank you for your interest! We will be in touch soon!");
     }
@@ -93,9 +97,18 @@ function Waitlist () {
 
       <FormControl mb={[1, 1, 2]}>
         <FormLabel htmlFor="email">Organization</FormLabel>
-          <Input type="text" placeholder="Organization" name="oragnization" onChange={ update } />
+          <Input type="text" placeholder="Organization" name="organization" onChange={ update } />
       </FormControl>
 
+      <FormControl mb={[1, 1, 2]}>
+        <FormLabel htmlFor="email">Category</FormLabel>
+        <Select placeholder="Select category" name="category" onChange={ update }>
+          <option value='Investor'>Investor</option>
+          <option value='Guild'>Guild</option>
+          <option value='Player'>Player</option>
+          <option value='Other'>Other</option>
+        </Select>
+      </FormControl>
 
       <FormControl mb={[1, 1, 2]}>
         <FormLabel htmlFor="email">Tell us anything you would like us to know</FormLabel>

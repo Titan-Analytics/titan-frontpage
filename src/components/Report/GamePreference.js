@@ -305,7 +305,7 @@ const YearsPlayed = () => {
       "demo": "Years Played",
       ">10 Years": 53,
       '5 - 10 Years': 27,
-      '>5 Years': 21,
+      '<5 Years': 21,
     },
   ];
   return (
@@ -314,7 +314,7 @@ const YearsPlayed = () => {
       keys={[
         '>10 Years',
         '5 - 10 Years',
-        '>5 Years',
+        '<5 Years',
       ].reverse()}
       indexBy="demo"
       margin={{ top: 15, right: 190, bottom: 40, left: 60 }}
